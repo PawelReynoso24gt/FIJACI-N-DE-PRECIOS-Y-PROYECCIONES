@@ -57,11 +57,20 @@ namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
             {
                 u = double.Parse(textBoxU.Text);
             }
+
+            int ufu = UNISIFU();
+            labelFisicasU.Text = ufu.ToString();
         }
         private int UNIFIS()
         {
             int uf = (int)(go / (pv - cv));
             return uf;
+        }
+
+        private int UNISIFU()
+        {
+            int ufu = (int)((go + u) / (pv - cv));
+            return ufu;
         }
     }
 }
