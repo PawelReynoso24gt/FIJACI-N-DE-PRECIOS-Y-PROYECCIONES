@@ -43,7 +43,6 @@
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
-            label8 = new Label();
             labelFisicas = new Label();
             label9 = new Label();
             textBoxGO = new TextBox();
@@ -53,6 +52,8 @@
             textBoxPRcv = new TextBox();
             textBoxPRmu = new TextBox();
             labelFisicasU = new Label();
+            labelFisicasISR = new Label();
+            labelMonetarias = new Label();
             SuspendLayout();
             // 
             // label1
@@ -168,15 +169,6 @@
             label7.TabIndex = 14;
             label7.Text = "UNIDADES FÍSICAS DESPUES DE IMPUESTOS:\r\n";
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(700, 30);
-            label8.Name = "label8";
-            label8.Size = new Size(65, 15);
-            label8.TabIndex = 15;
-            label8.Text = "Unidad (Q)";
-            // 
             // labelFisicas
             // 
             labelFisicas.AutoSize = true;
@@ -250,11 +242,31 @@
             labelFisicasU.TabIndex = 24;
             labelFisicasU.Text = "0";
             // 
+            // labelFisicasISR
+            // 
+            labelFisicasISR.AutoSize = true;
+            labelFisicasISR.Location = new Point(678, 118);
+            labelFisicasISR.Name = "labelFisicasISR";
+            labelFisicasISR.Size = new Size(13, 15);
+            labelFisicasISR.TabIndex = 25;
+            labelFisicasISR.Text = "0";
+            // 
+            // labelMonetarias
+            // 
+            labelMonetarias.AutoSize = true;
+            labelMonetarias.Location = new Point(678, 151);
+            labelMonetarias.Name = "labelMonetarias";
+            labelMonetarias.Size = new Size(40, 15);
+            labelMonetarias.TabIndex = 26;
+            labelMonetarias.Text = "Q 0.00";
+            // 
             // FormFijacionVentas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1166, 450);
+            Controls.Add(labelMonetarias);
+            Controls.Add(labelFisicasISR);
             Controls.Add(labelFisicasU);
             Controls.Add(textBoxPRmu);
             Controls.Add(textBoxPRcv);
@@ -264,7 +276,6 @@
             Controls.Add(textBoxGO);
             Controls.Add(label9);
             Controls.Add(labelFisicas);
-            Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -300,7 +311,6 @@
         private Label label5;
         private Label label6;
         private Label label7;
-        private Label label8;
         private Label labelFisicas;
         private Label label9;
         private TextBox textBoxGO;
@@ -310,5 +320,7 @@
         private TextBox textBoxPRcv;
         private TextBox textBoxPRmu;
         private Label labelFisicasU;
+        private Label labelFisicasISR;
+        private Label labelMonetarias;
     }
 }
