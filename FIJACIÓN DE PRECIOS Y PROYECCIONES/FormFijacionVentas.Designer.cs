@@ -47,12 +47,18 @@
             labelFisicas = new Label();
             label9 = new Label();
             textBoxGO = new TextBox();
+            label10 = new Label();
+            label11 = new Label();
+            textBoxPRpv = new TextBox();
+            textBoxPRcv = new TextBox();
+            textBoxPRmu = new TextBox();
+            labelFisicasU = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(52, 33);
+            label1.Location = new Point(52, 63);
             label1.Name = "label1";
             label1.Size = new Size(88, 15);
             label1.TabIndex = 0;
@@ -61,7 +67,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(58, 79);
+            label2.Location = new Point(58, 109);
             label2.Name = "label2";
             label2.Size = new Size(82, 15);
             label2.TabIndex = 1;
@@ -70,7 +76,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(32, 121);
+            label3.Location = new Point(32, 151);
             label3.Name = "label3";
             label3.Size = new Size(108, 15);
             label3.TabIndex = 2;
@@ -78,37 +84,37 @@
             // 
             // textBoxPV
             // 
-            textBoxPV.Location = new Point(146, 30);
+            textBoxPV.Location = new Point(146, 60);
             textBoxPV.Name = "textBoxPV";
             textBoxPV.Size = new Size(100, 23);
             textBoxPV.TabIndex = 4;
             // 
             // textBoxCV
             // 
-            textBoxCV.Location = new Point(146, 76);
+            textBoxCV.Location = new Point(146, 106);
             textBoxCV.Name = "textBoxCV";
             textBoxCV.Size = new Size(100, 23);
             textBoxCV.TabIndex = 5;
             // 
             // textBoxMU
             // 
-            textBoxMU.Location = new Point(146, 118);
+            textBoxMU.Location = new Point(146, 148);
             textBoxMU.Name = "textBoxMU";
             textBoxMU.Size = new Size(100, 23);
             textBoxMU.TabIndex = 6;
             // 
             // textBoxU
             // 
-            textBoxU.Location = new Point(146, 205);
+            textBoxU.Location = new Point(146, 235);
             textBoxU.Name = "textBoxU";
             textBoxU.Size = new Size(100, 23);
             textBoxU.TabIndex = 7;
             // 
             // buttonCalcular
             // 
-            buttonCalcular.Location = new Point(323, 287);
+            buttonCalcular.Location = new Point(292, 235);
             buttonCalcular.Name = "buttonCalcular";
-            buttonCalcular.Size = new Size(75, 23);
+            buttonCalcular.Size = new Size(79, 23);
             buttonCalcular.TabIndex = 8;
             buttonCalcular.Text = "CALCULAR";
             buttonCalcular.UseVisualStyleBackColor = true;
@@ -117,7 +123,7 @@
             // checkBoxUtilidad
             // 
             checkBoxUtilidad.AutoSize = true;
-            checkBoxUtilidad.Location = new Point(73, 207);
+            checkBoxUtilidad.Location = new Point(73, 237);
             checkBoxUtilidad.Name = "checkBoxUtilidad";
             checkBoxUtilidad.Size = new Size(67, 19);
             checkBoxUtilidad.TabIndex = 9;
@@ -129,7 +135,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(477, 53);
+            label4.Location = new Point(563, 53);
             label4.Name = "label4";
             label4.Size = new Size(109, 15);
             label4.TabIndex = 11;
@@ -138,7 +144,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(445, 151);
+            label5.Location = new Point(531, 151);
             label5.Name = "label5";
             label5.Size = new Size(141, 15);
             label5.TabIndex = 12;
@@ -147,7 +153,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(413, 84);
+            label6.Location = new Point(499, 84);
             label6.Name = "label6";
             label6.Size = new Size(173, 15);
             label6.TabIndex = 13;
@@ -156,7 +162,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(346, 118);
+            label7.Location = new Point(432, 118);
             label7.Name = "label7";
             label7.Size = new Size(240, 15);
             label7.TabIndex = 14;
@@ -165,7 +171,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(614, 30);
+            label8.Location = new Point(700, 30);
             label8.Name = "label8";
             label8.Size = new Size(65, 15);
             label8.TabIndex = 15;
@@ -174,7 +180,7 @@
             // labelFisicas
             // 
             labelFisicas.AutoSize = true;
-            labelFisicas.Location = new Point(592, 53);
+            labelFisicas.Location = new Point(678, 53);
             labelFisicas.Name = "labelFisicas";
             labelFisicas.Size = new Size(13, 15);
             labelFisicas.TabIndex = 16;
@@ -183,7 +189,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(38, 165);
+            label9.Location = new Point(38, 195);
             label9.Name = "label9";
             label9.Size = new Size(102, 15);
             label9.TabIndex = 17;
@@ -191,16 +197,70 @@
             // 
             // textBoxGO
             // 
-            textBoxGO.Location = new Point(146, 162);
+            textBoxGO.Location = new Point(146, 192);
             textBoxGO.Name = "textBoxGO";
             textBoxGO.Size = new Size(100, 23);
             textBoxGO.TabIndex = 18;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(166, 30);
+            label10.Name = "label10";
+            label10.Size = new Size(65, 15);
+            label10.TabIndex = 19;
+            label10.Text = "Unidad (Q)";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(292, 30);
+            label11.Name = "label11";
+            label11.Size = new Size(66, 15);
+            label11.TabIndex = 20;
+            label11.Text = "Unidad (%)";
+            // 
+            // textBoxPRpv
+            // 
+            textBoxPRpv.Location = new Point(271, 60);
+            textBoxPRpv.Name = "textBoxPRpv";
+            textBoxPRpv.Size = new Size(100, 23);
+            textBoxPRpv.TabIndex = 21;
+            // 
+            // textBoxPRcv
+            // 
+            textBoxPRcv.Location = new Point(271, 106);
+            textBoxPRcv.Name = "textBoxPRcv";
+            textBoxPRcv.Size = new Size(100, 23);
+            textBoxPRcv.TabIndex = 22;
+            // 
+            // textBoxPRmu
+            // 
+            textBoxPRmu.Location = new Point(271, 148);
+            textBoxPRmu.Name = "textBoxPRmu";
+            textBoxPRmu.Size = new Size(100, 23);
+            textBoxPRmu.TabIndex = 23;
+            // 
+            // labelFisicasU
+            // 
+            labelFisicasU.AutoSize = true;
+            labelFisicasU.Location = new Point(678, 84);
+            labelFisicasU.Name = "labelFisicasU";
+            labelFisicasU.Size = new Size(13, 15);
+            labelFisicasU.TabIndex = 24;
+            labelFisicasU.Text = "0";
             // 
             // FormFijacionVentas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1166, 450);
+            Controls.Add(labelFisicasU);
+            Controls.Add(textBoxPRmu);
+            Controls.Add(textBoxPRcv);
+            Controls.Add(textBoxPRpv);
+            Controls.Add(label11);
+            Controls.Add(label10);
             Controls.Add(textBoxGO);
             Controls.Add(label9);
             Controls.Add(labelFisicas);
@@ -244,5 +304,11 @@
         private Label labelFisicas;
         private Label label9;
         private TextBox textBoxGO;
+        private Label label10;
+        private Label label11;
+        private TextBox textBoxPRpv;
+        private TextBox textBoxPRcv;
+        private TextBox textBoxPRmu;
+        private Label labelFisicasU;
     }
 }
