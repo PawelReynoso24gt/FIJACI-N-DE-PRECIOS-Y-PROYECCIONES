@@ -47,13 +47,16 @@
             label9 = new Label();
             textBoxGO = new TextBox();
             label10 = new Label();
-            label11 = new Label();
             textBoxPRpv = new TextBox();
             textBoxPRcv = new TextBox();
             textBoxPRmu = new TextBox();
             labelFisicasU = new Label();
             labelFisicasISR = new Label();
             labelMonetarias = new Label();
+            checkBoxPorciento = new CheckBox();
+            toolTip2 = new ToolTip(components);
+            label8 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -203,15 +206,6 @@
             label10.TabIndex = 19;
             label10.Text = "Unidad (Q)";
             // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(292, 30);
-            label11.Name = "label11";
-            label11.Size = new Size(66, 15);
-            label11.TabIndex = 20;
-            label11.Text = "Unidad (%)";
-            // 
             // textBoxPRpv
             // 
             textBoxPRpv.Location = new Point(271, 60);
@@ -260,18 +254,50 @@
             labelMonetarias.TabIndex = 26;
             labelMonetarias.Text = "Q 0.00";
             // 
+            // checkBoxPorciento
+            // 
+            checkBoxPorciento.AutoSize = true;
+            checkBoxPorciento.Location = new Point(288, 29);
+            checkBoxPorciento.Name = "checkBoxPorciento";
+            checkBoxPorciento.Size = new Size(85, 19);
+            checkBoxPorciento.TabIndex = 27;
+            checkBoxPorciento.Text = "Unidad (%)";
+            checkBoxPorciento.UseVisualStyleBackColor = true;
+            checkBoxPorciento.CheckedChanged += checkBoxPorciento_CheckedChanged;
+            checkBoxPorciento.MouseHover += checkBoxPorciento_MouseHover;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(32, 332);
+            label8.Name = "label8";
+            label8.Size = new Size(114, 15);
+            label8.TabIndex = 28;
+            label8.Text = "COMPROBACIONES";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(563, 237);
+            button1.Name = "button1";
+            button1.Size = new Size(93, 23);
+            button1.TabIndex = 29;
+            button1.Text = "COMPROBAR";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // FormFijacionVentas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1166, 450);
+            ClientSize = new Size(883, 617);
+            Controls.Add(button1);
+            Controls.Add(label8);
+            Controls.Add(checkBoxPorciento);
             Controls.Add(labelMonetarias);
             Controls.Add(labelFisicasISR);
             Controls.Add(labelFisicasU);
             Controls.Add(textBoxPRmu);
             Controls.Add(textBoxPRcv);
             Controls.Add(textBoxPRpv);
-            Controls.Add(label11);
             Controls.Add(label10);
             Controls.Add(textBoxGO);
             Controls.Add(label9);
@@ -315,12 +341,15 @@
         private Label label9;
         private TextBox textBoxGO;
         private Label label10;
-        private Label label11;
         private TextBox textBoxPRpv;
         private TextBox textBoxPRcv;
         private TextBox textBoxPRmu;
         private Label labelFisicasU;
         private Label labelFisicasISR;
         private Label labelMonetarias;
+        private CheckBox checkBoxPorciento;
+        private ToolTip toolTip2;
+        private Label label8;
+        private Button button1;
     }
 }

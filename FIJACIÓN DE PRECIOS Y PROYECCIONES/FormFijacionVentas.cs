@@ -16,11 +16,16 @@ namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
     public partial class FormFijacionVentas : Form
     {
         double pv, cv, mu, u, go;
-        float isrformu = 0.25f;
+        double isrformu = 0.25;
+        double PRpv = 100, PRcv, PRmu;
         public FormFijacionVentas()
         {
             InitializeComponent();
             textBoxU.Enabled = false;
+            textBoxPRpv.Enabled = false;
+            textBoxPRcv.Enabled = false;
+            textBoxPRmu.Enabled = false;
+            textBoxPRpv.Text = PRpv.ToString();
         }
 
         private void checkBoxUtilidad_MouseHover(object sender, EventArgs e)
@@ -42,28 +47,82 @@ namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
 
         private void buttonCalcular_Click(object sender, EventArgs e)
         {
-            pv = double.Parse(textBoxPV.Text);
-            cv = double.Parse(textBoxCV.Text);
-            mu = double.Parse(textBoxMU.Text);
-            go = double.Parse(textBoxGO.Text);
-
-            int uf = UNIFIS();
-            labelFisicas.Text = uf.ToString();
-
-            if (string.IsNullOrEmpty(textBoxU.Text))
+            if (string.IsNullOrEmpty(textBoxPRcv.Text) && string.IsNullOrEmpty(textBoxPRmu.Text))
             {
-                u = (pv * uf) * 0.50;
+                pv = double.Parse(textBoxPV.Text);
+                cv = double.Parse(textBoxCV.Text);
+                mu = double.Parse(textBoxMU.Text);
+                go = double.Parse(textBoxGO.Text);
+
+                int uf = UNIFIS();
+                labelFisicas.Text = uf.ToString();
+
+                if (string.IsNullOrEmpty(textBoxU.Text))
+                {
+                    u = (pv * uf) * 0.50;
+                }
+                else
+                {
+                    u = double.Parse(textBoxU.Text);
+                }
+
+                int ufu = UNIFISU();
+                labelFisicasU.Text = ufu.ToString();
+
+                int ufisr = UNIFISISR();
+                labelFisicasISR.Text = ufisr.ToString();
+
+                double ufimon = UNIMON();
+                labelMonetarias.Text = "Q " + ufimon.ToString();
             }
             else
             {
-                u = double.Parse(textBoxU.Text);
+                PORCENTAJES();
+                if (string.IsNullOrEmpty(textBoxMU.Text))
+                {
+                    cv = double.Parse(textBoxCV.Text);
+                    mu = ((cv * PRmu) / PRcv);
+                    textBoxMU.Text = mu.ToString();
+                    //Console.WriteLine("el mu es"+mu);
+
+                    pv = cv + mu;
+                    textBoxPV.Text = pv.ToString();
+                    //Console.WriteLine("el pv es"+pv);
+                }
+                else if (string.IsNullOrEmpty(textBoxCV.Text))
+                {
+                    mu = double.Parse(textBoxMU.Text);
+                    cv = ((mu * PRcv) / PRmu);
+                    textBoxCV.Text = cv.ToString();
+                    //Console.WriteLine("el cv es"+cv);
+
+                    pv = cv + mu;
+                    textBoxPV.Text = pv.ToString();
+                    //Console.WriteLine("el pv es" +pv);
+                }
+                go = double.Parse(textBoxGO.Text);
+
+                int uf = UNIFIS();
+                labelFisicas.Text = uf.ToString();
+
+                if (string.IsNullOrEmpty(textBoxU.Text))
+                {
+                    u = (pv * uf) * 0.50;
+                }
+                else
+                {
+                    u = double.Parse(textBoxU.Text);
+                }
+
+                int ufu = UNIFISU();
+                labelFisicasU.Text = ufu.ToString();
+
+                int ufisr = UNIFISISR();
+                labelFisicasISR.Text = ufisr.ToString();
+
+                double ufimon = UNIMON();
+                labelMonetarias.Text = "Q " + ufimon.ToString();
             }
-
-            int ufu = UNIFISU();
-            labelFisicasU.Text = ufu.ToString();
-
-            int ufisr = UNIFISISR();
-            labelFisicasISR.Text = ufisr.ToString();
         }
         private int UNIFIS()
         {
@@ -79,14 +138,54 @@ namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
 
         private int UNIFISISR()
         {
-            int ufisr = (int)((go + (u / (1-isrformu))) / (pv - cv));
+            int ufisr = (int)((go + (u / (1 - isrformu))) / (pv - cv));
             return ufisr;
         }
 
         private double UNIMON()
         {
-            double ufimon = (go / (1-(cv-pv)));
+            double ufimon = (go / (1 - (cv / pv)));
             return ufimon;
+        }
+
+        private void checkBoxPorciento_MouseHover(object sender, EventArgs e)
+        {
+            toolTip2.SetToolTip(checkBoxUtilidad, "Si usará porcentajes puede usarlos accediendo aquí");
+        }
+
+        private void checkBoxPorciento_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxPorciento.Checked)
+            {
+                textBoxPRpv.Enabled = true;
+                textBoxPRcv.Enabled = true;
+                textBoxPRmu.Enabled = true;
+            }
+            else
+            {
+                textBoxPRpv.Enabled = false;
+                textBoxPRcv.Enabled = false;
+                textBoxPRmu.Enabled = false;
+            }
+        }
+
+        private double PORCENTAJES()
+        {
+            if (string.IsNullOrEmpty(textBoxPRcv.Text))
+            {
+                PRmu = double.Parse(textBoxPRmu.Text);
+                PRcv = PRpv - PRmu;
+                textBoxPRcv.Text = PRcv.ToString();
+                return PRcv;
+            }
+            if (string.IsNullOrEmpty(textBoxPRmu.Text))
+            {
+                PRcv = double.Parse(textBoxPRcv.Text);
+                PRmu = PRpv - PRcv;
+                textBoxPRmu.Text = PRmu.ToString();
+                return PRmu;
+            }
+            return 0; //por si ninguna se cumple
         }
     }
 }
