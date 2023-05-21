@@ -1,6 +1,6 @@
 ﻿namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
 {
-    partial class Form1
+    partial class FormMenu
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,41 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            buttonFijacion = new Button();
+            buttonBase = new Button();
+            buttonProyeccion = new Button();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             SuspendLayout();
             // 
-            // button1
+            // buttonFijacion
             // 
-            button1.Location = new Point(234, 149);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            buttonFijacion.Location = new Point(234, 149);
+            buttonFijacion.Name = "buttonFijacion";
+            buttonFijacion.Size = new Size(75, 23);
+            buttonFijacion.TabIndex = 0;
+            buttonFijacion.Text = "button1";
+            buttonFijacion.UseVisualStyleBackColor = true;
+            buttonFijacion.Click += button1_Click;
             // 
-            // button2
+            // buttonBase
             // 
-            button2.Location = new Point(400, 149);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            buttonBase.Location = new Point(400, 149);
+            buttonBase.Name = "buttonBase";
+            buttonBase.Size = new Size(75, 23);
+            buttonBase.TabIndex = 1;
+            buttonBase.Text = "button2";
+            buttonBase.UseVisualStyleBackColor = true;
+            buttonBase.Click += buttonBase_Click;
             // 
-            // button3
+            // buttonProyeccion
             // 
-            button3.Location = new Point(587, 149);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 2;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            buttonProyeccion.Location = new Point(587, 149);
+            buttonProyeccion.Name = "buttonProyeccion";
+            buttonProyeccion.Size = new Size(75, 23);
+            buttonProyeccion.TabIndex = 2;
+            buttonProyeccion.Text = "button3";
+            buttonProyeccion.UseVisualStyleBackColor = true;
+            buttonProyeccion.Click += buttonProyeccion_Click;
             // 
             // label1
             // 
@@ -85,7 +88,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(411, 121);
+            label3.Location = new Point(422, 121);
             label3.Name = "label3";
             label3.Size = new Size(40, 15);
             label3.TabIndex = 5;
@@ -100,7 +103,7 @@
             label4.TabIndex = 6;
             label4.Text = "Proyecciones";
             // 
-            // Form1
+            // FormMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -109,20 +112,20 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Name = "Form1";
-            Text = "Form1";
+            Controls.Add(buttonProyeccion);
+            Controls.Add(buttonBase);
+            Controls.Add(buttonFijacion);
+            Name = "FormMenu";
+            Text = "Menú Inicio";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button buttonFijacion;
+        private Button buttonBase;
+        private Button buttonProyeccion;
         private Label label1;
         private Label label2;
         private Label label3;
