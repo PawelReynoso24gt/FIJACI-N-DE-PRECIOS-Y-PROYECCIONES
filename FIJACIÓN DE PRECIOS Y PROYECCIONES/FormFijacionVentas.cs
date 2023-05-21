@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Diagnostics.CodeAnalysis;
 
 namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
 {
@@ -58,8 +59,11 @@ namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
                 u = double.Parse(textBoxU.Text);
             }
 
-            int ufu = UNISIFU();
+            int ufu = UNIFISU();
             labelFisicasU.Text = ufu.ToString();
+
+            int ufisr = UNIFISISR();
+            labelFisicasISR.Text = ufisr.ToString();
         }
         private int UNIFIS()
         {
@@ -67,10 +71,22 @@ namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
             return uf;
         }
 
-        private int UNISIFU()
+        private int UNIFISU()
         {
             int ufu = (int)((go + u) / (pv - cv));
             return ufu;
+        }
+
+        private int UNIFISISR()
+        {
+            int ufisr = (int)((go + (u / (1-isrformu))) / (pv - cv));
+            return ufisr;
+        }
+
+        private double UNIMON()
+        {
+            double ufimon = (go / (1-(cv-pv)));
+            return ufimon;
         }
     }
 }
