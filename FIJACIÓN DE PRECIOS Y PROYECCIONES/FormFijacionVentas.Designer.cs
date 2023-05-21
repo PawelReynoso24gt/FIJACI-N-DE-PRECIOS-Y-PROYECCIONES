@@ -57,6 +57,41 @@
             toolTip2 = new ToolTip(components);
             label8 = new Label();
             button1 = new Button();
+            label11 = new Label();
+            label12 = new Label();
+            label13 = new Label();
+            label14 = new Label();
+            label15 = new Label();
+            label16 = new Label();
+            label17 = new Label();
+            label18 = new Label();
+            label19 = new Label();
+            label20 = new Label();
+            label21 = new Label();
+            label22 = new Label();
+            label23 = new Label();
+            label24 = new Label();
+            label25 = new Label();
+            label26 = new Label();
+            label27 = new Label();
+            label28 = new Label();
+            label29 = new Label();
+            label30 = new Label();
+            label31 = new Label();
+            label32 = new Label();
+            label33 = new Label();
+            label34 = new Label();
+            label35 = new Label();
+            label36 = new Label();
+            label37 = new Label();
+            label38 = new Label();
+            label39 = new Label();
+            label40 = new Label();
+            label41 = new Label();
+            label42 = new Label();
+            label43 = new Label();
+            label44 = new Label();
+            label45 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -269,7 +304,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(32, 332);
+            label8.Location = new Point(26, 334);
             label8.Name = "label8";
             label8.Size = new Size(114, 15);
             label8.TabIndex = 28;
@@ -284,11 +319,361 @@
             button1.Text = "COMPROBAR";
             button1.UseVisualStyleBackColor = true;
             // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(60, 448);
+            label11.Name = "label11";
+            label11.Size = new Size(100, 135);
+            label11.TabIndex = 30;
+            label11.Text = "Ventas\r\n\r\nCosto variable\r\n\r\nUtilidad bruta\r\n\r\nGastos operativos\r\n\r\nUAI";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(281, 448);
+            label12.Name = "label12";
+            label12.Size = new Size(100, 195);
+            label12.TabIndex = 31;
+            label12.Text = "Ventas\r\n\r\nCosto variable\r\n\r\nUtilidad bruta\r\n\r\nGastos operativos\r\n\r\nUAI\r\n\r\nISR\r\n\r\nUtilidad NETA";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(530, 448);
+            label13.Name = "label13";
+            label13.Size = new Size(100, 195);
+            label13.TabIndex = 32;
+            label13.Text = "Ventas\r\n\r\nCosto variable\r\n\r\nUtilidad bruta\r\n\r\nGastos operativos\r\n\r\nUAI\r\n\r\nISR\r\n\r\nUtilidad NETA";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(736, 448);
+            label14.Name = "label14";
+            label14.Size = new Size(100, 135);
+            label14.TabIndex = 33;
+            label14.Text = "Ventas\r\n\r\nCosto variable\r\n\r\nUtilidad bruta\r\n\r\nGastos operativos\r\n\r\nUAI";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(166, 448);
+            label15.Name = "label15";
+            label15.Size = new Size(40, 15);
+            label15.TabIndex = 34;
+            label15.Text = "Q 0.00";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(166, 478);
+            label16.Name = "label16";
+            label16.Size = new Size(40, 15);
+            label16.TabIndex = 35;
+            label16.Text = "Q 0.00";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(166, 508);
+            label17.Name = "label17";
+            label17.Size = new Size(40, 15);
+            label17.TabIndex = 36;
+            label17.Text = "Q 0.00";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(166, 538);
+            label18.Name = "label18";
+            label18.Size = new Size(40, 15);
+            label18.TabIndex = 37;
+            label18.Text = "Q 0.00";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(166, 568);
+            label19.Name = "label19";
+            label19.Size = new Size(40, 15);
+            label19.TabIndex = 38;
+            label19.Text = "Q 0.00";
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(842, 568);
+            label20.Name = "label20";
+            label20.Size = new Size(40, 15);
+            label20.TabIndex = 43;
+            label20.Text = "Q 0.00";
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Location = new Point(842, 538);
+            label21.Name = "label21";
+            label21.Size = new Size(40, 15);
+            label21.TabIndex = 42;
+            label21.Text = "Q 0.00";
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Location = new Point(842, 508);
+            label22.Name = "label22";
+            label22.Size = new Size(40, 15);
+            label22.TabIndex = 41;
+            label22.Text = "Q 0.00";
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(842, 478);
+            label23.Name = "label23";
+            label23.Size = new Size(40, 15);
+            label23.TabIndex = 40;
+            label23.Text = "Q 0.00";
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Location = new Point(842, 448);
+            label24.Name = "label24";
+            label24.Size = new Size(40, 15);
+            label24.TabIndex = 39;
+            label24.Text = "Q 0.00";
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Location = new Point(387, 568);
+            label25.Name = "label25";
+            label25.Size = new Size(40, 15);
+            label25.TabIndex = 48;
+            label25.Text = "Q 0.00";
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.Location = new Point(387, 538);
+            label26.Name = "label26";
+            label26.Size = new Size(40, 15);
+            label26.TabIndex = 47;
+            label26.Text = "Q 0.00";
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Location = new Point(387, 508);
+            label27.Name = "label27";
+            label27.Size = new Size(40, 15);
+            label27.TabIndex = 46;
+            label27.Text = "Q 0.00";
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Location = new Point(387, 478);
+            label28.Name = "label28";
+            label28.Size = new Size(40, 15);
+            label28.TabIndex = 45;
+            label28.Text = "Q 0.00";
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Location = new Point(387, 448);
+            label29.Name = "label29";
+            label29.Size = new Size(40, 15);
+            label29.TabIndex = 44;
+            label29.Text = "Q 0.00";
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.Location = new Point(387, 598);
+            label30.Name = "label30";
+            label30.Size = new Size(40, 15);
+            label30.TabIndex = 49;
+            label30.Text = "Q 0.00";
+            // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.Location = new Point(387, 628);
+            label31.Name = "label31";
+            label31.Size = new Size(40, 15);
+            label31.TabIndex = 50;
+            label31.Text = "Q 0.00";
+            // 
+            // label32
+            // 
+            label32.AutoSize = true;
+            label32.Location = new Point(636, 628);
+            label32.Name = "label32";
+            label32.Size = new Size(40, 15);
+            label32.TabIndex = 57;
+            label32.Text = "Q 0.00";
+            // 
+            // label33
+            // 
+            label33.AutoSize = true;
+            label33.Location = new Point(636, 598);
+            label33.Name = "label33";
+            label33.Size = new Size(40, 15);
+            label33.TabIndex = 56;
+            label33.Text = "Q 0.00";
+            // 
+            // label34
+            // 
+            label34.AutoSize = true;
+            label34.Location = new Point(636, 568);
+            label34.Name = "label34";
+            label34.Size = new Size(40, 15);
+            label34.TabIndex = 55;
+            label34.Text = "Q 0.00";
+            // 
+            // label35
+            // 
+            label35.AutoSize = true;
+            label35.Location = new Point(636, 538);
+            label35.Name = "label35";
+            label35.Size = new Size(40, 15);
+            label35.TabIndex = 54;
+            label35.Text = "Q 0.00";
+            // 
+            // label36
+            // 
+            label36.AutoSize = true;
+            label36.Location = new Point(636, 508);
+            label36.Name = "label36";
+            label36.Size = new Size(40, 15);
+            label36.TabIndex = 53;
+            label36.Text = "Q 0.00";
+            // 
+            // label37
+            // 
+            label37.AutoSize = true;
+            label37.Location = new Point(636, 478);
+            label37.Name = "label37";
+            label37.Size = new Size(40, 15);
+            label37.TabIndex = 52;
+            label37.Text = "Q 0.00";
+            // 
+            // label38
+            // 
+            label38.AutoSize = true;
+            label38.Location = new Point(636, 448);
+            label38.Name = "label38";
+            label38.Size = new Size(40, 15);
+            label38.TabIndex = 51;
+            label38.Text = "Q 0.00";
+            // 
+            // label39
+            // 
+            label39.AutoSize = true;
+            label39.Location = new Point(244, 426);
+            label39.Name = "label39";
+            label39.Size = new Size(10, 240);
+            label39.TabIndex = 58;
+            label39.Text = "|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n";
+            // 
+            // label40
+            // 
+            label40.AutoSize = true;
+            label40.Location = new Point(474, 426);
+            label40.Name = "label40";
+            label40.Size = new Size(10, 240);
+            label40.TabIndex = 59;
+            label40.Text = "|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n";
+            // 
+            // label41
+            // 
+            label41.AutoSize = true;
+            label41.Location = new Point(702, 426);
+            label41.Name = "label41";
+            label41.Size = new Size(10, 240);
+            label41.TabIndex = 60;
+            label41.Text = "|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n";
+            // 
+            // label42
+            // 
+            label42.AutoSize = true;
+            label42.Location = new Point(60, 401);
+            label42.Name = "label42";
+            label42.Size = new Size(106, 15);
+            label42.TabIndex = 61;
+            label42.Text = "UNIDADES FÍSICAS";
+            // 
+            // label43
+            // 
+            label43.AutoSize = true;
+            label43.Location = new Point(281, 401);
+            label43.Name = "label43";
+            label43.Size = new Size(170, 15);
+            label43.TabIndex = 62;
+            label43.Text = "UNIDADES FÍSICAS + UTILIDAD";
+            // 
+            // label44
+            // 
+            label44.AutoSize = true;
+            label44.Location = new Point(530, 401);
+            label44.Name = "label44";
+            label44.Size = new Size(161, 15);
+            label44.TabIndex = 63;
+            label44.Text = "U. F. DESPUES DE IMPUESTOS\r\n";
+            // 
+            // label45
+            // 
+            label45.AutoSize = true;
+            label45.Location = new Point(736, 401);
+            label45.Name = "label45";
+            label45.Size = new Size(138, 15);
+            label45.TabIndex = 64;
+            label45.Text = "UNIDADES MONETARIAS";
+            // 
             // FormFijacionVentas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(883, 617);
+            ClientSize = new Size(985, 698);
+            Controls.Add(label45);
+            Controls.Add(label44);
+            Controls.Add(label43);
+            Controls.Add(label42);
+            Controls.Add(label41);
+            Controls.Add(label40);
+            Controls.Add(label39);
+            Controls.Add(label32);
+            Controls.Add(label33);
+            Controls.Add(label34);
+            Controls.Add(label35);
+            Controls.Add(label36);
+            Controls.Add(label37);
+            Controls.Add(label38);
+            Controls.Add(label31);
+            Controls.Add(label30);
+            Controls.Add(label25);
+            Controls.Add(label26);
+            Controls.Add(label27);
+            Controls.Add(label28);
+            Controls.Add(label29);
+            Controls.Add(label20);
+            Controls.Add(label21);
+            Controls.Add(label22);
+            Controls.Add(label23);
+            Controls.Add(label24);
+            Controls.Add(label19);
+            Controls.Add(label18);
+            Controls.Add(label17);
+            Controls.Add(label16);
+            Controls.Add(label15);
+            Controls.Add(label14);
+            Controls.Add(label13);
+            Controls.Add(label12);
+            Controls.Add(label11);
             Controls.Add(button1);
             Controls.Add(label8);
             Controls.Add(checkBoxPorciento);
@@ -351,5 +736,40 @@
         private ToolTip toolTip2;
         private Label label8;
         private Button button1;
+        private Label label11;
+        private Label label12;
+        private Label label13;
+        private Label label14;
+        private Label label15;
+        private Label label16;
+        private Label label17;
+        private Label label18;
+        private Label label19;
+        private Label label20;
+        private Label label21;
+        private Label label22;
+        private Label label23;
+        private Label label24;
+        private Label label25;
+        private Label label26;
+        private Label label27;
+        private Label label28;
+        private Label label29;
+        private Label label30;
+        private Label label31;
+        private Label label32;
+        private Label label33;
+        private Label label34;
+        private Label label35;
+        private Label label36;
+        private Label label37;
+        private Label label38;
+        private Label label39;
+        private Label label40;
+        private Label label41;
+        private Label label42;
+        private Label label43;
+        private Label label44;
+        private Label label45;
     }
 }
