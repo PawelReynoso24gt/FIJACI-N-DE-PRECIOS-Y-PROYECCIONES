@@ -190,6 +190,7 @@ namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //UF
             go = double.Parse(textBoxGO.Text);
             labelGOUF.Text = "Q " + go.ToString();
             pv = double.Parse(textBoxPV.Text);
@@ -203,10 +204,55 @@ namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
             labelCVUF.Text = "Q " + costovaruf.ToString();
 
             double ubrutauf = ventasuf - costovaruf;
-            labelUBrutaUF.Text = ubrutauf.ToString();
+            labelUBrutaUF.Text = "Q " + ubrutauf.ToString();
 
             double uaiuf = ubrutauf - go;
             labelUAIUF.Text = "Q " + uaiuf.ToString();
+
+            //UFU
+            labelGOUFU.Text = "Q " + go.ToString();
+
+            if (string.IsNullOrEmpty(textBoxU.Text))
+            {
+                u = (pv * uf) * 0.50;
+            }
+            else
+            {
+                u = double.Parse(textBoxU.Text);
+            }
+
+            int ufu = UNIFISU();
+
+            double ventasufu = pv * ufu;
+            double costovarufu = cv * ufu;
+            labelVentasUFU.Text = "Q" + ventasufu.ToString();
+            labelCVUFU.Text = "Q" + costovarufu.ToString();
+            
+            double ubrutaufu = ventasufu - costovarufu;
+            labelUBrutaUFU.Text = "Q " + ubrutaufu.ToString();
+
+            double uaiufu = ubrutaufu - go;
+            labelUAIUFU.Text = "Q " + uaiufu.ToString();
+
+            if(((0.25 * uaiufu) / ventasufu) < 0.07)
+            {
+                double isrufu = 0.25 * uaiufu;
+                labelISRUFU.Text = "Q " + isrufu.ToString();
+
+                double utineta = uaiufu - isrufu;
+                labelNETAUFU.Text = "Q " + utineta.ToString();
+            }
+            else
+            {
+                double isrufu = 0.07 * ventasufu;
+                labelISRUFU.Text = "Q " + isrufu.ToString();
+
+                double utineta = uaiufu - isrufu;
+                labelNETAUFU.Text = "Q " + utineta.ToString();
+            }
+
+            //UFUISR
+            labelGOUFISR.Text = "Q " + go.ToString();
         }
     }
 }

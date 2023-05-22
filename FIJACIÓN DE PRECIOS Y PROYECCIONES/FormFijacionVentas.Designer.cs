@@ -66,25 +66,25 @@
             labelUBrutaUF = new Label();
             labelGOUF = new Label();
             labelUAIUF = new Label();
-            label20 = new Label();
-            label21 = new Label();
-            label22 = new Label();
-            label23 = new Label();
-            label24 = new Label();
-            label25 = new Label();
-            label26 = new Label();
-            label27 = new Label();
-            label28 = new Label();
-            label29 = new Label();
-            label30 = new Label();
-            label31 = new Label();
-            label32 = new Label();
-            label33 = new Label();
-            label34 = new Label();
-            label35 = new Label();
-            label36 = new Label();
-            label37 = new Label();
-            label38 = new Label();
+            labelUAIMON = new Label();
+            labelGOMON = new Label();
+            labelUBrutaMON = new Label();
+            labelCVMON = new Label();
+            labelVentasMON = new Label();
+            labelUAIUFU = new Label();
+            labelGOUFU = new Label();
+            labelUBrutaUFU = new Label();
+            labelCVUFU = new Label();
+            labelVentasUFU = new Label();
+            labelISRUFU = new Label();
+            labelNETAUFU = new Label();
+            labelNETAUFISR = new Label();
+            labelISRUFISR = new Label();
+            labelUAIUFISR = new Label();
+            labelGOUFISR = new Label();
+            labelUBrutaUFISR = new Label();
+            labelCVUFISR = new Label();
+            labelVentasUFISR = new Label();
             label39 = new Label();
             label40 = new Label();
             label41 = new Label();
@@ -401,176 +401,176 @@
             labelUAIUF.TabIndex = 38;
             labelUAIUF.Text = "Q 0.00";
             // 
-            // label20
+            // labelUAIMON
             // 
-            label20.AutoSize = true;
-            label20.Location = new Point(842, 568);
-            label20.Name = "label20";
-            label20.Size = new Size(40, 15);
-            label20.TabIndex = 43;
-            label20.Text = "Q 0.00";
+            labelUAIMON.AutoSize = true;
+            labelUAIMON.Location = new Point(842, 568);
+            labelUAIMON.Name = "labelUAIMON";
+            labelUAIMON.Size = new Size(40, 15);
+            labelUAIMON.TabIndex = 43;
+            labelUAIMON.Text = "Q 0.00";
             // 
-            // label21
+            // labelGOMON
             // 
-            label21.AutoSize = true;
-            label21.Location = new Point(842, 538);
-            label21.Name = "label21";
-            label21.Size = new Size(40, 15);
-            label21.TabIndex = 42;
-            label21.Text = "Q 0.00";
+            labelGOMON.AutoSize = true;
+            labelGOMON.Location = new Point(842, 538);
+            labelGOMON.Name = "labelGOMON";
+            labelGOMON.Size = new Size(40, 15);
+            labelGOMON.TabIndex = 42;
+            labelGOMON.Text = "Q 0.00";
             // 
-            // label22
+            // labelUBrutaMON
             // 
-            label22.AutoSize = true;
-            label22.Location = new Point(842, 508);
-            label22.Name = "label22";
-            label22.Size = new Size(40, 15);
-            label22.TabIndex = 41;
-            label22.Text = "Q 0.00";
+            labelUBrutaMON.AutoSize = true;
+            labelUBrutaMON.Location = new Point(842, 508);
+            labelUBrutaMON.Name = "labelUBrutaMON";
+            labelUBrutaMON.Size = new Size(40, 15);
+            labelUBrutaMON.TabIndex = 41;
+            labelUBrutaMON.Text = "Q 0.00";
             // 
-            // label23
+            // labelCVMON
             // 
-            label23.AutoSize = true;
-            label23.Location = new Point(842, 478);
-            label23.Name = "label23";
-            label23.Size = new Size(40, 15);
-            label23.TabIndex = 40;
-            label23.Text = "Q 0.00";
+            labelCVMON.AutoSize = true;
+            labelCVMON.Location = new Point(842, 478);
+            labelCVMON.Name = "labelCVMON";
+            labelCVMON.Size = new Size(40, 15);
+            labelCVMON.TabIndex = 40;
+            labelCVMON.Text = "Q 0.00";
             // 
-            // label24
+            // labelVentasMON
             // 
-            label24.AutoSize = true;
-            label24.Location = new Point(842, 448);
-            label24.Name = "label24";
-            label24.Size = new Size(40, 15);
-            label24.TabIndex = 39;
-            label24.Text = "Q 0.00";
+            labelVentasMON.AutoSize = true;
+            labelVentasMON.Location = new Point(842, 448);
+            labelVentasMON.Name = "labelVentasMON";
+            labelVentasMON.Size = new Size(40, 15);
+            labelVentasMON.TabIndex = 39;
+            labelVentasMON.Text = "Q 0.00";
             // 
-            // label25
+            // labelUAIUFU
             // 
-            label25.AutoSize = true;
-            label25.Location = new Point(387, 568);
-            label25.Name = "label25";
-            label25.Size = new Size(40, 15);
-            label25.TabIndex = 48;
-            label25.Text = "Q 0.00";
+            labelUAIUFU.AutoSize = true;
+            labelUAIUFU.Location = new Point(387, 568);
+            labelUAIUFU.Name = "labelUAIUFU";
+            labelUAIUFU.Size = new Size(40, 15);
+            labelUAIUFU.TabIndex = 48;
+            labelUAIUFU.Text = "Q 0.00";
             // 
-            // label26
+            // labelGOUFU
             // 
-            label26.AutoSize = true;
-            label26.Location = new Point(387, 538);
-            label26.Name = "label26";
-            label26.Size = new Size(40, 15);
-            label26.TabIndex = 47;
-            label26.Text = "Q 0.00";
+            labelGOUFU.AutoSize = true;
+            labelGOUFU.Location = new Point(387, 538);
+            labelGOUFU.Name = "labelGOUFU";
+            labelGOUFU.Size = new Size(40, 15);
+            labelGOUFU.TabIndex = 47;
+            labelGOUFU.Text = "Q 0.00";
             // 
-            // label27
+            // labelUBrutaUFU
             // 
-            label27.AutoSize = true;
-            label27.Location = new Point(387, 508);
-            label27.Name = "label27";
-            label27.Size = new Size(40, 15);
-            label27.TabIndex = 46;
-            label27.Text = "Q 0.00";
+            labelUBrutaUFU.AutoSize = true;
+            labelUBrutaUFU.Location = new Point(387, 508);
+            labelUBrutaUFU.Name = "labelUBrutaUFU";
+            labelUBrutaUFU.Size = new Size(40, 15);
+            labelUBrutaUFU.TabIndex = 46;
+            labelUBrutaUFU.Text = "Q 0.00";
             // 
-            // label28
+            // labelCVUFU
             // 
-            label28.AutoSize = true;
-            label28.Location = new Point(387, 478);
-            label28.Name = "label28";
-            label28.Size = new Size(40, 15);
-            label28.TabIndex = 45;
-            label28.Text = "Q 0.00";
+            labelCVUFU.AutoSize = true;
+            labelCVUFU.Location = new Point(387, 478);
+            labelCVUFU.Name = "labelCVUFU";
+            labelCVUFU.Size = new Size(40, 15);
+            labelCVUFU.TabIndex = 45;
+            labelCVUFU.Text = "Q 0.00";
             // 
-            // label29
+            // labelVentasUFU
             // 
-            label29.AutoSize = true;
-            label29.Location = new Point(387, 448);
-            label29.Name = "label29";
-            label29.Size = new Size(40, 15);
-            label29.TabIndex = 44;
-            label29.Text = "Q 0.00";
+            labelVentasUFU.AutoSize = true;
+            labelVentasUFU.Location = new Point(387, 448);
+            labelVentasUFU.Name = "labelVentasUFU";
+            labelVentasUFU.Size = new Size(40, 15);
+            labelVentasUFU.TabIndex = 44;
+            labelVentasUFU.Text = "Q 0.00";
             // 
-            // label30
+            // labelISRUFU
             // 
-            label30.AutoSize = true;
-            label30.Location = new Point(387, 598);
-            label30.Name = "label30";
-            label30.Size = new Size(40, 15);
-            label30.TabIndex = 49;
-            label30.Text = "Q 0.00";
+            labelISRUFU.AutoSize = true;
+            labelISRUFU.Location = new Point(387, 598);
+            labelISRUFU.Name = "labelISRUFU";
+            labelISRUFU.Size = new Size(40, 15);
+            labelISRUFU.TabIndex = 49;
+            labelISRUFU.Text = "Q 0.00";
             // 
-            // label31
+            // labelNETAUFU
             // 
-            label31.AutoSize = true;
-            label31.Location = new Point(387, 628);
-            label31.Name = "label31";
-            label31.Size = new Size(40, 15);
-            label31.TabIndex = 50;
-            label31.Text = "Q 0.00";
+            labelNETAUFU.AutoSize = true;
+            labelNETAUFU.Location = new Point(387, 628);
+            labelNETAUFU.Name = "labelNETAUFU";
+            labelNETAUFU.Size = new Size(40, 15);
+            labelNETAUFU.TabIndex = 50;
+            labelNETAUFU.Text = "Q 0.00";
             // 
-            // label32
+            // labelNETAUFISR
             // 
-            label32.AutoSize = true;
-            label32.Location = new Point(636, 628);
-            label32.Name = "label32";
-            label32.Size = new Size(40, 15);
-            label32.TabIndex = 57;
-            label32.Text = "Q 0.00";
+            labelNETAUFISR.AutoSize = true;
+            labelNETAUFISR.Location = new Point(636, 628);
+            labelNETAUFISR.Name = "labelNETAUFISR";
+            labelNETAUFISR.Size = new Size(40, 15);
+            labelNETAUFISR.TabIndex = 57;
+            labelNETAUFISR.Text = "Q 0.00";
             // 
-            // label33
+            // labelISRUFISR
             // 
-            label33.AutoSize = true;
-            label33.Location = new Point(636, 598);
-            label33.Name = "label33";
-            label33.Size = new Size(40, 15);
-            label33.TabIndex = 56;
-            label33.Text = "Q 0.00";
+            labelISRUFISR.AutoSize = true;
+            labelISRUFISR.Location = new Point(636, 598);
+            labelISRUFISR.Name = "labelISRUFISR";
+            labelISRUFISR.Size = new Size(40, 15);
+            labelISRUFISR.TabIndex = 56;
+            labelISRUFISR.Text = "Q 0.00";
             // 
-            // label34
+            // labelUAIUFISR
             // 
-            label34.AutoSize = true;
-            label34.Location = new Point(636, 568);
-            label34.Name = "label34";
-            label34.Size = new Size(40, 15);
-            label34.TabIndex = 55;
-            label34.Text = "Q 0.00";
+            labelUAIUFISR.AutoSize = true;
+            labelUAIUFISR.Location = new Point(636, 568);
+            labelUAIUFISR.Name = "labelUAIUFISR";
+            labelUAIUFISR.Size = new Size(40, 15);
+            labelUAIUFISR.TabIndex = 55;
+            labelUAIUFISR.Text = "Q 0.00";
             // 
-            // label35
+            // labelGOUFISR
             // 
-            label35.AutoSize = true;
-            label35.Location = new Point(636, 538);
-            label35.Name = "label35";
-            label35.Size = new Size(40, 15);
-            label35.TabIndex = 54;
-            label35.Text = "Q 0.00";
+            labelGOUFISR.AutoSize = true;
+            labelGOUFISR.Location = new Point(636, 538);
+            labelGOUFISR.Name = "labelGOUFISR";
+            labelGOUFISR.Size = new Size(40, 15);
+            labelGOUFISR.TabIndex = 54;
+            labelGOUFISR.Text = "Q 0.00";
             // 
-            // label36
+            // labelUBrutaUFISR
             // 
-            label36.AutoSize = true;
-            label36.Location = new Point(636, 508);
-            label36.Name = "label36";
-            label36.Size = new Size(40, 15);
-            label36.TabIndex = 53;
-            label36.Text = "Q 0.00";
+            labelUBrutaUFISR.AutoSize = true;
+            labelUBrutaUFISR.Location = new Point(636, 508);
+            labelUBrutaUFISR.Name = "labelUBrutaUFISR";
+            labelUBrutaUFISR.Size = new Size(40, 15);
+            labelUBrutaUFISR.TabIndex = 53;
+            labelUBrutaUFISR.Text = "Q 0.00";
             // 
-            // label37
+            // labelCVUFISR
             // 
-            label37.AutoSize = true;
-            label37.Location = new Point(636, 478);
-            label37.Name = "label37";
-            label37.Size = new Size(40, 15);
-            label37.TabIndex = 52;
-            label37.Text = "Q 0.00";
+            labelCVUFISR.AutoSize = true;
+            labelCVUFISR.Location = new Point(636, 478);
+            labelCVUFISR.Name = "labelCVUFISR";
+            labelCVUFISR.Size = new Size(40, 15);
+            labelCVUFISR.TabIndex = 52;
+            labelCVUFISR.Text = "Q 0.00";
             // 
-            // label38
+            // labelVentasUFISR
             // 
-            label38.AutoSize = true;
-            label38.Location = new Point(636, 448);
-            label38.Name = "label38";
-            label38.Size = new Size(40, 15);
-            label38.TabIndex = 51;
-            label38.Text = "Q 0.00";
+            labelVentasUFISR.AutoSize = true;
+            labelVentasUFISR.Location = new Point(636, 448);
+            labelVentasUFISR.Name = "labelVentasUFISR";
+            labelVentasUFISR.Size = new Size(40, 15);
+            labelVentasUFISR.TabIndex = 51;
+            labelVentasUFISR.Text = "Q 0.00";
             // 
             // label39
             // 
@@ -647,25 +647,25 @@
             Controls.Add(label41);
             Controls.Add(label40);
             Controls.Add(label39);
-            Controls.Add(label32);
-            Controls.Add(label33);
-            Controls.Add(label34);
-            Controls.Add(label35);
-            Controls.Add(label36);
-            Controls.Add(label37);
-            Controls.Add(label38);
-            Controls.Add(label31);
-            Controls.Add(label30);
-            Controls.Add(label25);
-            Controls.Add(label26);
-            Controls.Add(label27);
-            Controls.Add(label28);
-            Controls.Add(label29);
-            Controls.Add(label20);
-            Controls.Add(label21);
-            Controls.Add(label22);
-            Controls.Add(label23);
-            Controls.Add(label24);
+            Controls.Add(labelNETAUFISR);
+            Controls.Add(labelISRUFISR);
+            Controls.Add(labelUAIUFISR);
+            Controls.Add(labelGOUFISR);
+            Controls.Add(labelUBrutaUFISR);
+            Controls.Add(labelCVUFISR);
+            Controls.Add(labelVentasUFISR);
+            Controls.Add(labelNETAUFU);
+            Controls.Add(labelISRUFU);
+            Controls.Add(labelUAIUFU);
+            Controls.Add(labelGOUFU);
+            Controls.Add(labelUBrutaUFU);
+            Controls.Add(labelCVUFU);
+            Controls.Add(labelVentasUFU);
+            Controls.Add(labelUAIMON);
+            Controls.Add(labelGOMON);
+            Controls.Add(labelUBrutaMON);
+            Controls.Add(labelCVMON);
+            Controls.Add(labelVentasMON);
             Controls.Add(labelUAIUF);
             Controls.Add(labelGOUF);
             Controls.Add(labelUBrutaUF);
@@ -746,25 +746,25 @@
         private Label labelUBrutaUF;
         private Label labelGOUF;
         private Label labelUAIUF;
-        private Label label20;
-        private Label label21;
-        private Label label22;
-        private Label label23;
-        private Label label24;
-        private Label label25;
-        private Label label26;
-        private Label label27;
-        private Label label28;
-        private Label label29;
-        private Label label30;
-        private Label label31;
-        private Label label32;
-        private Label label33;
-        private Label label34;
-        private Label label35;
-        private Label label36;
-        private Label label37;
-        private Label label38;
+        private Label labelUAIMON;
+        private Label labelGOMON;
+        private Label labelUBrutaMON;
+        private Label labelCVMON;
+        private Label labelVentasMON;
+        private Label labelUAIUFU;
+        private Label labelGOUFU;
+        private Label labelUBrutaUFU;
+        private Label labelCVUFU;
+        private Label labelVentasUFU;
+        private Label labelISRUFU;
+        private Label labelNETAUFU;
+        private Label labelNETAUFISR;
+        private Label labelISRUFISR;
+        private Label labelUAIUFISR;
+        private Label labelGOUFISR;
+        private Label labelUBrutaUFISR;
+        private Label labelCVUFISR;
+        private Label labelVentasUFISR;
         private Label label39;
         private Label label40;
         private Label label41;
