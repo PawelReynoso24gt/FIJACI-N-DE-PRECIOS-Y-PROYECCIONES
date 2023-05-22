@@ -28,38 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
             buttonFijacion = new Button();
             buttonBase = new Button();
             buttonProyeccion = new Button();
             label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // buttonFijacion
             // 
-            buttonFijacion.Location = new Point(234, 149);
+            buttonFijacion.BackColor = Color.Snow;
+            buttonFijacion.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonFijacion.ForeColor = SystemColors.MenuHighlight;
+            buttonFijacion.Location = new Point(103, 55);
             buttonFijacion.Name = "buttonFijacion";
-            buttonFijacion.Size = new Size(75, 23);
+            buttonFijacion.Size = new Size(87, 55);
             buttonFijacion.TabIndex = 0;
-            buttonFijacion.Text = "button1";
-            buttonFijacion.UseVisualStyleBackColor = true;
+            buttonFijacion.Text = "Fijación de Precios";
+            buttonFijacion.UseVisualStyleBackColor = false;
             buttonFijacion.Click += button1_Click;
             // 
             // buttonBase
             // 
-            buttonBase.Location = new Point(400, 149);
+            buttonBase.BackColor = Color.Snow;
+            buttonBase.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonBase.ForeColor = SystemColors.MenuHighlight;
+            buttonBase.Location = new Point(383, 55);
             buttonBase.Name = "buttonBase";
-            buttonBase.Size = new Size(75, 23);
+            buttonBase.Size = new Size(87, 55);
             buttonBase.TabIndex = 1;
-            buttonBase.Text = "button2";
-            buttonBase.UseVisualStyleBackColor = true;
+            buttonBase.Text = "Base 1";
+            buttonBase.UseVisualStyleBackColor = false;
             buttonBase.Click += buttonBase_Click;
             // 
             // buttonProyeccion
             // 
-            buttonProyeccion.Location = new Point(587, 149);
+            buttonProyeccion.Location = new Point(266, 183);
             buttonProyeccion.Name = "buttonProyeccion";
             buttonProyeccion.Size = new Size(75, 23);
             buttonProyeccion.TabIndex = 2;
@@ -70,53 +78,51 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.Control;
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(329, 15);
+            label1.Size = new Size(386, 17);
             label1.TabIndex = 3;
             label1.Text = "FIJACIÓN DE PRECIOS || BASE 1 || PROYECCIONES DE VENTAS";
             // 
-            // label2
+            // pictureBox1
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(217, 121);
-            label2.Name = "label2";
-            label2.Size = new Size(105, 15);
-            label2.TabIndex = 4;
-            label2.Text = "Fijación de Precios";
+            pictureBox1.Image = Properties.Resources.online_shop;
+            pictureBox1.Location = new Point(103, 116);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(87, 90);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
             // 
-            // label3
+            // pictureBox2
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(422, 121);
-            label3.Name = "label3";
-            label3.Size = new Size(40, 15);
-            label3.TabIndex = 5;
-            label3.Text = "Base 1";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(585, 121);
-            label4.Name = "label4";
-            label4.Size = new Size(77, 15);
-            label4.TabIndex = 6;
-            label4.Text = "Proyecciones";
+            pictureBox2.Image = Properties.Resources.accounting;
+            pictureBox2.Location = new Point(383, 116);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(87, 90);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 8;
+            pictureBox2.TabStop = false;
             // 
             // FormMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
+            BackColor = Color.Black;
+            ClientSize = new Size(554, 241);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(buttonProyeccion);
             Controls.Add(buttonBase);
             Controls.Add(buttonFijacion);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormMenu";
             Text = "Menú Inicio";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -127,8 +133,7 @@
         private Button buttonBase;
         private Button buttonProyeccion;
         private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

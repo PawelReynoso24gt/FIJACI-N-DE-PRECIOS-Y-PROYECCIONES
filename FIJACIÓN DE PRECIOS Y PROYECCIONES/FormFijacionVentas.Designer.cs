@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFijacionVentas));
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -93,11 +94,16 @@
             label44 = new Label();
             label45 = new Label();
             labelRegresar = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = Color.White;
             label1.Location = new Point(52, 63);
             label1.Name = "label1";
             label1.Size = new Size(88, 15);
@@ -107,6 +113,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = Color.White;
             label2.Location = new Point(58, 109);
             label2.Name = "label2";
             label2.Size = new Size(82, 15);
@@ -116,6 +123,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = Color.White;
             label3.Location = new Point(32, 151);
             label3.Name = "label3";
             label3.Size = new Size(108, 15);
@@ -152,17 +160,21 @@
             // 
             // buttonCalcular
             // 
-            buttonCalcular.Location = new Point(292, 235);
+            buttonCalcular.BackColor = Color.White;
+            buttonCalcular.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonCalcular.ForeColor = SystemColors.MenuHighlight;
+            buttonCalcular.Location = new Point(457, 63);
             buttonCalcular.Name = "buttonCalcular";
-            buttonCalcular.Size = new Size(79, 23);
+            buttonCalcular.Size = new Size(89, 40);
             buttonCalcular.TabIndex = 8;
             buttonCalcular.Text = "CALCULAR";
-            buttonCalcular.UseVisualStyleBackColor = true;
+            buttonCalcular.UseVisualStyleBackColor = false;
             buttonCalcular.Click += buttonCalcular_Click;
             // 
             // checkBoxUtilidad
             // 
             checkBoxUtilidad.AutoSize = true;
+            checkBoxUtilidad.ForeColor = Color.White;
             checkBoxUtilidad.Location = new Point(73, 237);
             checkBoxUtilidad.Name = "checkBoxUtilidad";
             checkBoxUtilidad.Size = new Size(67, 19);
@@ -175,7 +187,8 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(563, 53);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(741, 59);
             label4.Name = "label4";
             label4.Size = new Size(109, 15);
             label4.TabIndex = 11;
@@ -184,7 +197,8 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(531, 151);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(709, 157);
             label5.Name = "label5";
             label5.Size = new Size(141, 15);
             label5.TabIndex = 12;
@@ -193,7 +207,8 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(499, 84);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(677, 90);
             label6.Name = "label6";
             label6.Size = new Size(173, 15);
             label6.TabIndex = 13;
@@ -202,7 +217,8 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(432, 118);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(610, 124);
             label7.Name = "label7";
             label7.Size = new Size(240, 15);
             label7.TabIndex = 14;
@@ -211,7 +227,8 @@
             // labelFisicas
             // 
             labelFisicas.AutoSize = true;
-            labelFisicas.Location = new Point(678, 53);
+            labelFisicas.ForeColor = Color.White;
+            labelFisicas.Location = new Point(856, 59);
             labelFisicas.Name = "labelFisicas";
             labelFisicas.Size = new Size(13, 15);
             labelFisicas.TabIndex = 16;
@@ -220,6 +237,7 @@
             // label9
             // 
             label9.AutoSize = true;
+            label9.ForeColor = Color.White;
             label9.Location = new Point(38, 195);
             label9.Name = "label9";
             label9.Size = new Size(102, 15);
@@ -236,6 +254,7 @@
             // label10
             // 
             label10.AutoSize = true;
+            label10.ForeColor = Color.White;
             label10.Location = new Point(166, 30);
             label10.Name = "label10";
             label10.Size = new Size(65, 15);
@@ -266,7 +285,8 @@
             // labelFisicasU
             // 
             labelFisicasU.AutoSize = true;
-            labelFisicasU.Location = new Point(678, 84);
+            labelFisicasU.ForeColor = Color.White;
+            labelFisicasU.Location = new Point(856, 90);
             labelFisicasU.Name = "labelFisicasU";
             labelFisicasU.Size = new Size(13, 15);
             labelFisicasU.TabIndex = 24;
@@ -275,7 +295,8 @@
             // labelFisicasISR
             // 
             labelFisicasISR.AutoSize = true;
-            labelFisicasISR.Location = new Point(678, 118);
+            labelFisicasISR.ForeColor = Color.White;
+            labelFisicasISR.Location = new Point(856, 124);
             labelFisicasISR.Name = "labelFisicasISR";
             labelFisicasISR.Size = new Size(13, 15);
             labelFisicasISR.TabIndex = 25;
@@ -284,7 +305,8 @@
             // labelMonetarias
             // 
             labelMonetarias.AutoSize = true;
-            labelMonetarias.Location = new Point(678, 151);
+            labelMonetarias.ForeColor = Color.White;
+            labelMonetarias.Location = new Point(856, 157);
             labelMonetarias.Name = "labelMonetarias";
             labelMonetarias.Size = new Size(40, 15);
             labelMonetarias.TabIndex = 26;
@@ -293,6 +315,7 @@
             // checkBoxPorciento
             // 
             checkBoxPorciento.AutoSize = true;
+            checkBoxPorciento.ForeColor = Color.White;
             checkBoxPorciento.Location = new Point(288, 29);
             checkBoxPorciento.Name = "checkBoxPorciento";
             checkBoxPorciento.Size = new Size(85, 19);
@@ -305,6 +328,7 @@
             // label8
             // 
             label8.AutoSize = true;
+            label8.ForeColor = Color.White;
             label8.Location = new Point(26, 334);
             label8.Name = "label8";
             label8.Size = new Size(114, 15);
@@ -313,17 +337,20 @@
             // 
             // button1
             // 
-            button1.Location = new Point(563, 237);
+            button1.BackColor = Color.White;
+            button1.ForeColor = SystemColors.MenuHighlight;
+            button1.Location = new Point(1001, 384);
             button1.Name = "button1";
-            button1.Size = new Size(93, 23);
+            button1.Size = new Size(116, 36);
             button1.TabIndex = 29;
             button1.Text = "COMPROBAR";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // label11
             // 
             label11.AutoSize = true;
+            label11.ForeColor = Color.White;
             label11.Location = new Point(60, 448);
             label11.Name = "label11";
             label11.Size = new Size(100, 135);
@@ -333,6 +360,7 @@
             // label12
             // 
             label12.AutoSize = true;
+            label12.ForeColor = Color.White;
             label12.Location = new Point(281, 448);
             label12.Name = "label12";
             label12.Size = new Size(100, 195);
@@ -342,6 +370,7 @@
             // label13
             // 
             label13.AutoSize = true;
+            label13.ForeColor = Color.White;
             label13.Location = new Point(530, 448);
             label13.Name = "label13";
             label13.Size = new Size(100, 195);
@@ -351,6 +380,7 @@
             // label14
             // 
             label14.AutoSize = true;
+            label14.ForeColor = Color.White;
             label14.Location = new Point(736, 448);
             label14.Name = "label14";
             label14.Size = new Size(100, 135);
@@ -360,6 +390,7 @@
             // labelVentasUF
             // 
             labelVentasUF.AutoSize = true;
+            labelVentasUF.ForeColor = Color.White;
             labelVentasUF.Location = new Point(166, 448);
             labelVentasUF.Name = "labelVentasUF";
             labelVentasUF.Size = new Size(40, 15);
@@ -369,6 +400,7 @@
             // labelCVUF
             // 
             labelCVUF.AutoSize = true;
+            labelCVUF.ForeColor = Color.White;
             labelCVUF.Location = new Point(166, 478);
             labelCVUF.Name = "labelCVUF";
             labelCVUF.Size = new Size(40, 15);
@@ -378,6 +410,7 @@
             // labelUBrutaUF
             // 
             labelUBrutaUF.AutoSize = true;
+            labelUBrutaUF.ForeColor = Color.White;
             labelUBrutaUF.Location = new Point(166, 508);
             labelUBrutaUF.Name = "labelUBrutaUF";
             labelUBrutaUF.Size = new Size(40, 15);
@@ -387,6 +420,7 @@
             // labelGOUF
             // 
             labelGOUF.AutoSize = true;
+            labelGOUF.ForeColor = Color.White;
             labelGOUF.Location = new Point(166, 538);
             labelGOUF.Name = "labelGOUF";
             labelGOUF.Size = new Size(40, 15);
@@ -396,6 +430,7 @@
             // labelUAIUF
             // 
             labelUAIUF.AutoSize = true;
+            labelUAIUF.ForeColor = Color.White;
             labelUAIUF.Location = new Point(166, 568);
             labelUAIUF.Name = "labelUAIUF";
             labelUAIUF.Size = new Size(40, 15);
@@ -405,6 +440,7 @@
             // labelUAIMON
             // 
             labelUAIMON.AutoSize = true;
+            labelUAIMON.ForeColor = Color.White;
             labelUAIMON.Location = new Point(842, 568);
             labelUAIMON.Name = "labelUAIMON";
             labelUAIMON.Size = new Size(40, 15);
@@ -414,6 +450,7 @@
             // labelGOMON
             // 
             labelGOMON.AutoSize = true;
+            labelGOMON.ForeColor = Color.White;
             labelGOMON.Location = new Point(842, 538);
             labelGOMON.Name = "labelGOMON";
             labelGOMON.Size = new Size(40, 15);
@@ -423,6 +460,7 @@
             // labelUBrutaMON
             // 
             labelUBrutaMON.AutoSize = true;
+            labelUBrutaMON.ForeColor = Color.White;
             labelUBrutaMON.Location = new Point(842, 508);
             labelUBrutaMON.Name = "labelUBrutaMON";
             labelUBrutaMON.Size = new Size(40, 15);
@@ -432,6 +470,7 @@
             // labelCVMON
             // 
             labelCVMON.AutoSize = true;
+            labelCVMON.ForeColor = Color.White;
             labelCVMON.Location = new Point(842, 478);
             labelCVMON.Name = "labelCVMON";
             labelCVMON.Size = new Size(40, 15);
@@ -441,6 +480,7 @@
             // labelVentasMON
             // 
             labelVentasMON.AutoSize = true;
+            labelVentasMON.ForeColor = Color.White;
             labelVentasMON.Location = new Point(842, 448);
             labelVentasMON.Name = "labelVentasMON";
             labelVentasMON.Size = new Size(40, 15);
@@ -450,6 +490,7 @@
             // labelUAIUFU
             // 
             labelUAIUFU.AutoSize = true;
+            labelUAIUFU.ForeColor = Color.White;
             labelUAIUFU.Location = new Point(387, 568);
             labelUAIUFU.Name = "labelUAIUFU";
             labelUAIUFU.Size = new Size(40, 15);
@@ -459,6 +500,7 @@
             // labelGOUFU
             // 
             labelGOUFU.AutoSize = true;
+            labelGOUFU.ForeColor = Color.White;
             labelGOUFU.Location = new Point(387, 538);
             labelGOUFU.Name = "labelGOUFU";
             labelGOUFU.Size = new Size(40, 15);
@@ -468,6 +510,7 @@
             // labelUBrutaUFU
             // 
             labelUBrutaUFU.AutoSize = true;
+            labelUBrutaUFU.ForeColor = Color.White;
             labelUBrutaUFU.Location = new Point(387, 508);
             labelUBrutaUFU.Name = "labelUBrutaUFU";
             labelUBrutaUFU.Size = new Size(40, 15);
@@ -477,6 +520,7 @@
             // labelCVUFU
             // 
             labelCVUFU.AutoSize = true;
+            labelCVUFU.ForeColor = Color.White;
             labelCVUFU.Location = new Point(387, 478);
             labelCVUFU.Name = "labelCVUFU";
             labelCVUFU.Size = new Size(40, 15);
@@ -486,6 +530,7 @@
             // labelVentasUFU
             // 
             labelVentasUFU.AutoSize = true;
+            labelVentasUFU.ForeColor = Color.White;
             labelVentasUFU.Location = new Point(387, 448);
             labelVentasUFU.Name = "labelVentasUFU";
             labelVentasUFU.Size = new Size(40, 15);
@@ -495,6 +540,7 @@
             // labelISRUFU
             // 
             labelISRUFU.AutoSize = true;
+            labelISRUFU.ForeColor = Color.White;
             labelISRUFU.Location = new Point(387, 598);
             labelISRUFU.Name = "labelISRUFU";
             labelISRUFU.Size = new Size(40, 15);
@@ -504,6 +550,7 @@
             // labelNETAUFU
             // 
             labelNETAUFU.AutoSize = true;
+            labelNETAUFU.ForeColor = Color.White;
             labelNETAUFU.Location = new Point(387, 628);
             labelNETAUFU.Name = "labelNETAUFU";
             labelNETAUFU.Size = new Size(40, 15);
@@ -513,6 +560,7 @@
             // labelNETAUFISR
             // 
             labelNETAUFISR.AutoSize = true;
+            labelNETAUFISR.ForeColor = Color.White;
             labelNETAUFISR.Location = new Point(636, 628);
             labelNETAUFISR.Name = "labelNETAUFISR";
             labelNETAUFISR.Size = new Size(40, 15);
@@ -522,6 +570,7 @@
             // labelISRUFISR
             // 
             labelISRUFISR.AutoSize = true;
+            labelISRUFISR.ForeColor = Color.White;
             labelISRUFISR.Location = new Point(636, 598);
             labelISRUFISR.Name = "labelISRUFISR";
             labelISRUFISR.Size = new Size(40, 15);
@@ -531,6 +580,7 @@
             // labelUAIUFISR
             // 
             labelUAIUFISR.AutoSize = true;
+            labelUAIUFISR.ForeColor = Color.White;
             labelUAIUFISR.Location = new Point(636, 568);
             labelUAIUFISR.Name = "labelUAIUFISR";
             labelUAIUFISR.Size = new Size(40, 15);
@@ -540,6 +590,7 @@
             // labelGOUFISR
             // 
             labelGOUFISR.AutoSize = true;
+            labelGOUFISR.ForeColor = Color.White;
             labelGOUFISR.Location = new Point(636, 538);
             labelGOUFISR.Name = "labelGOUFISR";
             labelGOUFISR.Size = new Size(40, 15);
@@ -549,6 +600,7 @@
             // labelUBrutaUFISR
             // 
             labelUBrutaUFISR.AutoSize = true;
+            labelUBrutaUFISR.ForeColor = Color.White;
             labelUBrutaUFISR.Location = new Point(636, 508);
             labelUBrutaUFISR.Name = "labelUBrutaUFISR";
             labelUBrutaUFISR.Size = new Size(40, 15);
@@ -558,6 +610,7 @@
             // labelCVUFISR
             // 
             labelCVUFISR.AutoSize = true;
+            labelCVUFISR.ForeColor = Color.White;
             labelCVUFISR.Location = new Point(636, 478);
             labelCVUFISR.Name = "labelCVUFISR";
             labelCVUFISR.Size = new Size(40, 15);
@@ -567,6 +620,7 @@
             // labelVentasUFISR
             // 
             labelVentasUFISR.AutoSize = true;
+            labelVentasUFISR.ForeColor = Color.White;
             labelVentasUFISR.Location = new Point(636, 448);
             labelVentasUFISR.Name = "labelVentasUFISR";
             labelVentasUFISR.Size = new Size(40, 15);
@@ -576,6 +630,7 @@
             // label39
             // 
             label39.AutoSize = true;
+            label39.ForeColor = Color.White;
             label39.Location = new Point(244, 426);
             label39.Name = "label39";
             label39.Size = new Size(10, 240);
@@ -585,6 +640,7 @@
             // label40
             // 
             label40.AutoSize = true;
+            label40.ForeColor = Color.White;
             label40.Location = new Point(474, 426);
             label40.Name = "label40";
             label40.Size = new Size(10, 240);
@@ -594,6 +650,7 @@
             // label41
             // 
             label41.AutoSize = true;
+            label41.ForeColor = Color.White;
             label41.Location = new Point(702, 426);
             label41.Name = "label41";
             label41.Size = new Size(10, 240);
@@ -603,6 +660,7 @@
             // label42
             // 
             label42.AutoSize = true;
+            label42.ForeColor = Color.White;
             label42.Location = new Point(60, 401);
             label42.Name = "label42";
             label42.Size = new Size(106, 15);
@@ -612,6 +670,7 @@
             // label43
             // 
             label43.AutoSize = true;
+            label43.ForeColor = Color.White;
             label43.Location = new Point(281, 401);
             label43.Name = "label43";
             label43.Size = new Size(170, 15);
@@ -621,6 +680,7 @@
             // label44
             // 
             label44.AutoSize = true;
+            label44.ForeColor = Color.White;
             label44.Location = new Point(530, 401);
             label44.Name = "label44";
             label44.Size = new Size(161, 15);
@@ -630,6 +690,7 @@
             // label45
             // 
             label45.AutoSize = true;
+            label45.ForeColor = Color.White;
             label45.Location = new Point(736, 401);
             label45.Name = "label45";
             label45.Size = new Size(138, 15);
@@ -639,6 +700,8 @@
             // labelRegresar
             // 
             labelRegresar.AutoSize = true;
+            labelRegresar.BackColor = Color.Fuchsia;
+            labelRegresar.ForeColor = Color.White;
             labelRegresar.Location = new Point(12, 9);
             labelRegresar.Name = "labelRegresar";
             labelRegresar.Size = new Size(73, 15);
@@ -646,11 +709,34 @@
             labelRegresar.Text = "< REGRESAR";
             labelRegresar.Click += labelRegresar_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.teneduria_de_libros1;
+            pictureBox1.Location = new Point(458, 109);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(88, 82);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 90;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.calculadora__1_;
+            pictureBox2.Location = new Point(1001, 426);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(116, 112);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 91;
+            pictureBox2.TabStop = false;
+            // 
             // FormFijacionVentas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(985, 698);
+            BackColor = SystemColors.ActiveCaptionText;
+            ClientSize = new Size(1201, 698);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Controls.Add(labelRegresar);
             Controls.Add(label45);
             Controls.Add(label44);
@@ -713,8 +799,11 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormFijacionVentas";
             Text = "Fijación de Precios";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -785,5 +874,7 @@
         private Label label44;
         private Label label45;
         private Label labelRegresar;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBase1));
             label1 = new Label();
             textBoxCV = new TextBox();
             label2 = new Label();
@@ -66,11 +67,16 @@
             label7 = new Label();
             toolTip1 = new ToolTip(components);
             label9 = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = SystemColors.Control;
             label1.Location = new Point(54, 74);
             label1.Name = "label1";
             label1.Size = new Size(82, 15);
@@ -87,6 +93,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = SystemColors.Control;
             label2.Location = new Point(34, 107);
             label2.Name = "label2";
             label2.Size = new Size(102, 15);
@@ -103,6 +110,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = SystemColors.Control;
             label3.Location = new Point(88, 141);
             label3.Name = "label3";
             label3.Size = new Size(48, 15);
@@ -119,7 +127,8 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(557, 85);
+            label4.ForeColor = SystemColors.Control;
+            label4.Location = new Point(685, 69);
             label4.Name = "label4";
             label4.Size = new Size(43, 15);
             label4.TabIndex = 6;
@@ -128,7 +137,8 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(502, 128);
+            label5.ForeColor = SystemColors.Control;
+            label5.Location = new Point(630, 112);
             label5.Name = "label5";
             label5.Size = new Size(98, 15);
             label5.TabIndex = 7;
@@ -137,7 +147,8 @@
             // labelBase1
             // 
             labelBase1.AutoSize = true;
-            labelBase1.Location = new Point(606, 85);
+            labelBase1.ForeColor = SystemColors.Control;
+            labelBase1.Location = new Point(734, 69);
             labelBase1.Name = "labelBase1";
             labelBase1.Size = new Size(40, 15);
             labelBase1.TabIndex = 8;
@@ -146,7 +157,8 @@
             // labelBase1Utilidad
             // 
             labelBase1Utilidad.AutoSize = true;
-            labelBase1Utilidad.Location = new Point(606, 128);
+            labelBase1Utilidad.ForeColor = SystemColors.Control;
+            labelBase1Utilidad.Location = new Point(734, 112);
             labelBase1Utilidad.Name = "labelBase1Utilidad";
             labelBase1Utilidad.Size = new Size(40, 15);
             labelBase1Utilidad.TabIndex = 9;
@@ -155,6 +167,7 @@
             // label43
             // 
             label43.AutoSize = true;
+            label43.ForeColor = SystemColors.Control;
             label43.Location = new Point(317, 329);
             label43.Name = "label43";
             label43.Size = new Size(107, 15);
@@ -164,6 +177,7 @@
             // label42
             // 
             label42.AutoSize = true;
+            label42.ForeColor = SystemColors.Control;
             label42.Location = new Point(96, 329);
             label42.Name = "label42";
             label42.Size = new Size(43, 15);
@@ -173,6 +187,7 @@
             // label39
             // 
             label39.AutoSize = true;
+            label39.ForeColor = SystemColors.Control;
             label39.Location = new Point(280, 354);
             label39.Name = "label39";
             label39.Size = new Size(10, 240);
@@ -182,6 +197,7 @@
             // labelNETAB1U
             // 
             labelNETAB1U.AutoSize = true;
+            labelNETAB1U.ForeColor = SystemColors.Control;
             labelNETAB1U.Location = new Point(423, 556);
             labelNETAB1U.Name = "labelNETAB1U";
             labelNETAB1U.Size = new Size(40, 15);
@@ -191,6 +207,7 @@
             // labelISRB1U
             // 
             labelISRB1U.AutoSize = true;
+            labelISRB1U.ForeColor = SystemColors.Control;
             labelISRB1U.Location = new Point(423, 526);
             labelISRB1U.Name = "labelISRB1U";
             labelISRB1U.Size = new Size(40, 15);
@@ -200,6 +217,7 @@
             // labelUAIB1U
             // 
             labelUAIB1U.AutoSize = true;
+            labelUAIB1U.ForeColor = SystemColors.Control;
             labelUAIB1U.Location = new Point(423, 496);
             labelUAIB1U.Name = "labelUAIB1U";
             labelUAIB1U.Size = new Size(40, 15);
@@ -209,6 +227,7 @@
             // labelGOB1U
             // 
             labelGOB1U.AutoSize = true;
+            labelGOB1U.ForeColor = SystemColors.Control;
             labelGOB1U.Location = new Point(423, 466);
             labelGOB1U.Name = "labelGOB1U";
             labelGOB1U.Size = new Size(40, 15);
@@ -218,6 +237,7 @@
             // labelUBrutaB1U
             // 
             labelUBrutaB1U.AutoSize = true;
+            labelUBrutaB1U.ForeColor = SystemColors.Control;
             labelUBrutaB1U.Location = new Point(423, 436);
             labelUBrutaB1U.Name = "labelUBrutaB1U";
             labelUBrutaB1U.Size = new Size(40, 15);
@@ -227,6 +247,7 @@
             // labelCVB1U
             // 
             labelCVB1U.AutoSize = true;
+            labelCVB1U.ForeColor = SystemColors.Control;
             labelCVB1U.Location = new Point(423, 406);
             labelCVB1U.Name = "labelCVB1U";
             labelCVB1U.Size = new Size(40, 15);
@@ -236,6 +257,7 @@
             // labelVentasB1U
             // 
             labelVentasB1U.AutoSize = true;
+            labelVentasB1U.ForeColor = SystemColors.Control;
             labelVentasB1U.Location = new Point(423, 376);
             labelVentasB1U.Name = "labelVentasB1U";
             labelVentasB1U.Size = new Size(40, 15);
@@ -245,6 +267,7 @@
             // labelUAIB1
             // 
             labelUAIB1.AutoSize = true;
+            labelUAIB1.ForeColor = SystemColors.Control;
             labelUAIB1.Location = new Point(202, 496);
             labelUAIB1.Name = "labelUAIB1";
             labelUAIB1.Size = new Size(40, 15);
@@ -254,6 +277,7 @@
             // labelGOB1
             // 
             labelGOB1.AutoSize = true;
+            labelGOB1.ForeColor = SystemColors.Control;
             labelGOB1.Location = new Point(202, 466);
             labelGOB1.Name = "labelGOB1";
             labelGOB1.Size = new Size(40, 15);
@@ -263,6 +287,7 @@
             // labelUBrutaB1
             // 
             labelUBrutaB1.AutoSize = true;
+            labelUBrutaB1.ForeColor = SystemColors.Control;
             labelUBrutaB1.Location = new Point(202, 436);
             labelUBrutaB1.Name = "labelUBrutaB1";
             labelUBrutaB1.Size = new Size(40, 15);
@@ -272,6 +297,7 @@
             // labelCVB1
             // 
             labelCVB1.AutoSize = true;
+            labelCVB1.ForeColor = SystemColors.Control;
             labelCVB1.Location = new Point(202, 406);
             labelCVB1.Name = "labelCVB1";
             labelCVB1.Size = new Size(40, 15);
@@ -281,6 +307,7 @@
             // labelVentasB1
             // 
             labelVentasB1.AutoSize = true;
+            labelVentasB1.ForeColor = SystemColors.Control;
             labelVentasB1.Location = new Point(202, 376);
             labelVentasB1.Name = "labelVentasB1";
             labelVentasB1.Size = new Size(40, 15);
@@ -290,6 +317,7 @@
             // label12
             // 
             label12.AutoSize = true;
+            label12.ForeColor = SystemColors.Control;
             label12.Location = new Point(317, 376);
             label12.Name = "label12";
             label12.Size = new Size(100, 195);
@@ -299,6 +327,7 @@
             // label11
             // 
             label11.AutoSize = true;
+            label11.ForeColor = SystemColors.Control;
             label11.Location = new Point(96, 376);
             label11.Name = "label11";
             label11.Size = new Size(100, 135);
@@ -308,6 +337,7 @@
             // label8
             // 
             label8.AutoSize = true;
+            label8.ForeColor = SystemColors.Control;
             label8.Location = new Point(62, 262);
             label8.Name = "label8";
             label8.Size = new Size(114, 15);
@@ -316,17 +346,21 @@
             // 
             // buttoncalcular
             // 
-            buttoncalcular.Location = new Point(329, 151);
+            buttoncalcular.BackColor = Color.White;
+            buttoncalcular.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            buttoncalcular.ForeColor = SystemColors.MenuHighlight;
+            buttoncalcular.Location = new Point(499, 50);
             buttoncalcular.Name = "buttoncalcular";
-            buttoncalcular.Size = new Size(75, 23);
+            buttoncalcular.Size = new Size(88, 31);
             buttoncalcular.TabIndex = 81;
             buttoncalcular.Text = "CALCULAR";
-            buttoncalcular.UseVisualStyleBackColor = true;
+            buttoncalcular.UseVisualStyleBackColor = false;
             buttoncalcular.Click += buttoncalcular_Click;
             // 
             // checkBoxCalculoCV
             // 
             checkBoxCalculoCV.AutoSize = true;
+            checkBoxCalculoCV.ForeColor = Color.White;
             checkBoxCalculoCV.Location = new Point(317, 46);
             checkBoxCalculoCV.Name = "checkBoxCalculoCV";
             checkBoxCalculoCV.Size = new Size(87, 19);
@@ -352,17 +386,21 @@
             // 
             // buttonComprobar
             // 
-            buttonComprobar.Location = new Point(476, 214);
+            buttonComprobar.BackColor = Color.White;
+            buttonComprobar.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonComprobar.ForeColor = SystemColors.MenuHighlight;
+            buttonComprobar.Location = new Point(612, 258);
             buttonComprobar.Name = "buttonComprobar";
-            buttonComprobar.Size = new Size(93, 23);
+            buttonComprobar.Size = new Size(116, 31);
             buttonComprobar.TabIndex = 85;
             buttonComprobar.Text = "COMPROBAR";
-            buttonComprobar.UseVisualStyleBackColor = true;
+            buttonComprobar.UseVisualStyleBackColor = false;
             buttonComprobar.Click += buttonComprobar_Click;
             // 
             // label6
             // 
             label6.AutoSize = true;
+            label6.ForeColor = SystemColors.Control;
             label6.Location = new Point(295, 74);
             label6.Name = "label6";
             label6.Size = new Size(21, 15);
@@ -372,6 +410,7 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.ForeColor = SystemColors.Control;
             label7.Location = new Point(290, 107);
             label7.Name = "label7";
             label7.Size = new Size(26, 15);
@@ -381,6 +420,8 @@
             // label9
             // 
             label9.AutoSize = true;
+            label9.BackColor = Color.Fuchsia;
+            label9.ForeColor = SystemColors.Control;
             label9.Location = new Point(12, 9);
             label9.Name = "label9";
             label9.Size = new Size(73, 15);
@@ -388,11 +429,34 @@
             label9.Text = "< REGRESAR";
             label9.Click += label9_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.teneduria_de_libros1;
+            pictureBox1.Location = new Point(499, 87);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(88, 83);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 89;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.calculadora__1_;
+            pictureBox2.Location = new Point(612, 295);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(116, 112);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 90;
+            pictureBox2.TabStop = false;
+            // 
             // FormBase1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(719, 613);
+            BackColor = SystemColors.Desktop;
+            ClientSize = new Size(820, 613);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Controls.Add(label9);
             Controls.Add(label7);
             Controls.Add(label6);
@@ -429,8 +493,11 @@
             Controls.Add(label2);
             Controls.Add(textBoxCV);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormBase1";
             Text = "Base 1";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -474,5 +541,7 @@
         private Label label7;
         private ToolTip toolTip1;
         private Label label9;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

@@ -5,6 +5,7 @@ namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
         public FormMenu()
         {
             InitializeComponent();
+            buttonProyeccion.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)

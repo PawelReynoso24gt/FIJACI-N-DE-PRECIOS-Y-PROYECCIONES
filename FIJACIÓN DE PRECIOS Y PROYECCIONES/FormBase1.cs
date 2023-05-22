@@ -86,7 +86,7 @@ namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
             double uaib1u = ubrutabase1u - go;
             labelUAIB1U.Text = "Q " + uaib1u.ToString("N2");
 
-            if(((0.25 * uaib1u) / ventasbase1u) < 0.07)
+            if (((0.25 * uaib1u) / ventasbase1u) < 0.07)
             {
                 double isrb1u = 0.25 * uaib1u;
                 labelISRB1U.Text = isrb1u.ToString("N2");
