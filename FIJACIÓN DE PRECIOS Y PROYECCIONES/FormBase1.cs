@@ -16,5 +16,10 @@ namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
         {
             InitializeComponent();
         }
+
+        private void buttoncalcular_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
