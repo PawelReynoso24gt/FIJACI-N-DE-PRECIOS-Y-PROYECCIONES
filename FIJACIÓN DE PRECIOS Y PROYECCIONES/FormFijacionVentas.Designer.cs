@@ -61,11 +61,11 @@
             label12 = new Label();
             label13 = new Label();
             label14 = new Label();
-            label15 = new Label();
-            label16 = new Label();
-            label17 = new Label();
-            label18 = new Label();
-            label19 = new Label();
+            labelVentasUF = new Label();
+            labelCVUF = new Label();
+            labelUBrutaUF = new Label();
+            labelGOUF = new Label();
+            labelUAIUF = new Label();
             label20 = new Label();
             label21 = new Label();
             label22 = new Label();
@@ -318,6 +318,7 @@
             button1.TabIndex = 29;
             button1.Text = "COMPROBAR";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label11
             // 
@@ -355,50 +356,50 @@
             label14.TabIndex = 33;
             label14.Text = "Ventas\r\n\r\nCosto variable\r\n\r\nUtilidad bruta\r\n\r\nGastos operativos\r\n\r\nUAI";
             // 
-            // label15
+            // labelVentasUF
             // 
-            label15.AutoSize = true;
-            label15.Location = new Point(166, 448);
-            label15.Name = "label15";
-            label15.Size = new Size(40, 15);
-            label15.TabIndex = 34;
-            label15.Text = "Q 0.00";
+            labelVentasUF.AutoSize = true;
+            labelVentasUF.Location = new Point(166, 448);
+            labelVentasUF.Name = "labelVentasUF";
+            labelVentasUF.Size = new Size(40, 15);
+            labelVentasUF.TabIndex = 34;
+            labelVentasUF.Text = "Q 0.00";
             // 
-            // label16
+            // labelCVUF
             // 
-            label16.AutoSize = true;
-            label16.Location = new Point(166, 478);
-            label16.Name = "label16";
-            label16.Size = new Size(40, 15);
-            label16.TabIndex = 35;
-            label16.Text = "Q 0.00";
+            labelCVUF.AutoSize = true;
+            labelCVUF.Location = new Point(166, 478);
+            labelCVUF.Name = "labelCVUF";
+            labelCVUF.Size = new Size(40, 15);
+            labelCVUF.TabIndex = 35;
+            labelCVUF.Text = "Q 0.00";
             // 
-            // label17
+            // labelUBrutaUF
             // 
-            label17.AutoSize = true;
-            label17.Location = new Point(166, 508);
-            label17.Name = "label17";
-            label17.Size = new Size(40, 15);
-            label17.TabIndex = 36;
-            label17.Text = "Q 0.00";
+            labelUBrutaUF.AutoSize = true;
+            labelUBrutaUF.Location = new Point(166, 508);
+            labelUBrutaUF.Name = "labelUBrutaUF";
+            labelUBrutaUF.Size = new Size(40, 15);
+            labelUBrutaUF.TabIndex = 36;
+            labelUBrutaUF.Text = "Q 0.00";
             // 
-            // label18
+            // labelGOUF
             // 
-            label18.AutoSize = true;
-            label18.Location = new Point(166, 538);
-            label18.Name = "label18";
-            label18.Size = new Size(40, 15);
-            label18.TabIndex = 37;
-            label18.Text = "Q 0.00";
+            labelGOUF.AutoSize = true;
+            labelGOUF.Location = new Point(166, 538);
+            labelGOUF.Name = "labelGOUF";
+            labelGOUF.Size = new Size(40, 15);
+            labelGOUF.TabIndex = 37;
+            labelGOUF.Text = "Q 0.00";
             // 
-            // label19
+            // labelUAIUF
             // 
-            label19.AutoSize = true;
-            label19.Location = new Point(166, 568);
-            label19.Name = "label19";
-            label19.Size = new Size(40, 15);
-            label19.TabIndex = 38;
-            label19.Text = "Q 0.00";
+            labelUAIUF.AutoSize = true;
+            labelUAIUF.Location = new Point(166, 568);
+            labelUAIUF.Name = "labelUAIUF";
+            labelUAIUF.Size = new Size(40, 15);
+            labelUAIUF.TabIndex = 38;
+            labelUAIUF.Text = "Q 0.00";
             // 
             // label20
             // 
@@ -665,11 +666,11 @@
             Controls.Add(label22);
             Controls.Add(label23);
             Controls.Add(label24);
-            Controls.Add(label19);
-            Controls.Add(label18);
-            Controls.Add(label17);
-            Controls.Add(label16);
-            Controls.Add(label15);
+            Controls.Add(labelUAIUF);
+            Controls.Add(labelGOUF);
+            Controls.Add(labelUBrutaUF);
+            Controls.Add(labelCVUF);
+            Controls.Add(labelVentasUF);
             Controls.Add(label14);
             Controls.Add(label13);
             Controls.Add(label12);
@@ -740,11 +741,11 @@
         private Label label12;
         private Label label13;
         private Label label14;
-        private Label label15;
-        private Label label16;
-        private Label label17;
-        private Label label18;
-        private Label label19;
+        private Label labelVentasUF;
+        private Label labelCVUF;
+        private Label labelUBrutaUF;
+        private Label labelGOUF;
+        private Label labelUAIUF;
         private Label label20;
         private Label label21;
         private Label label22;

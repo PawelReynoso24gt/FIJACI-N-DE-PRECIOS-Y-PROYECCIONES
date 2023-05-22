@@ -187,5 +187,26 @@ namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
             }
             return 0; //por si ninguna se cumple
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            go = double.Parse(textBoxGO.Text);
+            labelGOUF.Text = "Q " + go.ToString();
+            pv = double.Parse(textBoxPV.Text);
+            cv = double.Parse(textBoxCV.Text);
+
+            int uf = UNIFIS();
+
+            double ventasuf = pv * uf;
+            double costovaruf = cv * uf;
+            labelVentasUF.Text = "Q " + ventasuf.ToString();
+            labelCVUF.Text = "Q " + costovaruf.ToString();
+
+            double ubrutauf = ventasuf - costovaruf;
+            labelUBrutaUF.Text = ubrutauf.ToString();
+
+            double uaiuf = ubrutauf - go;
+            labelUAIUF.Text = "Q " + uaiuf.ToString();
+        }
     }
 }
