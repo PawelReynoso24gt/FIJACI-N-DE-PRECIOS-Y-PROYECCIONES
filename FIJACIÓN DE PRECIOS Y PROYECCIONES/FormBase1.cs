@@ -137,7 +137,9 @@ namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
 
         private void label9_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FormMenu formMenu = new FormMenu();
+            formMenu.Show();
         }
     }
 }
