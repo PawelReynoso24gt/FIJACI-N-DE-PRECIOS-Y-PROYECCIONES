@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             label1 = new Label();
-            textBox1 = new TextBox();
+            textBoxCV = new TextBox();
             label2 = new Label();
-            textBox2 = new TextBox();
+            textBoxGO = new TextBox();
             label3 = new Label();
-            textBox3 = new TextBox();
+            textBoxUtilidad = new TextBox();
             label4 = new Label();
             label5 = new Label();
             labelBase1 = new Label();
@@ -58,11 +59,13 @@
             label8 = new Label();
             buttoncalcular = new Button();
             checkBoxCalculoCV = new CheckBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
+            textBoxPV = new TextBox();
+            textBoxMU = new TextBox();
             buttonComprobar = new Button();
             label6 = new Label();
             label7 = new Label();
+            toolTip1 = new ToolTip(components);
+            label9 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -74,12 +77,12 @@
             label1.TabIndex = 0;
             label1.Text = "Costo Variable";
             // 
-            // textBox1
+            // textBoxCV
             // 
-            textBox1.Location = new Point(142, 71);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 1;
+            textBoxCV.Location = new Point(142, 71);
+            textBoxCV.Name = "textBoxCV";
+            textBoxCV.Size = new Size(100, 23);
+            textBoxCV.TabIndex = 1;
             // 
             // label2
             // 
@@ -90,12 +93,12 @@
             label2.TabIndex = 2;
             label2.Text = "Gastos Operativos";
             // 
-            // textBox2
+            // textBoxGO
             // 
-            textBox2.Location = new Point(142, 104);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 3;
+            textBoxGO.Location = new Point(142, 104);
+            textBoxGO.Name = "textBoxGO";
+            textBoxGO.Size = new Size(100, 23);
+            textBoxGO.TabIndex = 3;
             // 
             // label3
             // 
@@ -106,12 +109,12 @@
             label3.TabIndex = 4;
             label3.Text = "Utilidad";
             // 
-            // textBox3
+            // textBoxUtilidad
             // 
-            textBox3.Location = new Point(142, 138);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 5;
+            textBoxUtilidad.Location = new Point(142, 138);
+            textBoxUtilidad.Name = "textBoxUtilidad";
+            textBoxUtilidad.Size = new Size(100, 23);
+            textBoxUtilidad.TabIndex = 5;
             // 
             // label4
             // 
@@ -330,20 +333,22 @@
             checkBoxCalculoCV.TabIndex = 82;
             checkBoxCalculoCV.Text = "Calcular CV";
             checkBoxCalculoCV.UseVisualStyleBackColor = true;
+            checkBoxCalculoCV.CheckedChanged += checkBoxCalculoCV_CheckedChanged;
+            checkBoxCalculoCV.MouseHover += checkBoxCalculoCV_MouseHover;
             // 
-            // textBox4
+            // textBoxPV
             // 
-            textBox4.Location = new Point(317, 71);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 83;
+            textBoxPV.Location = new Point(317, 71);
+            textBoxPV.Name = "textBoxPV";
+            textBoxPV.Size = new Size(100, 23);
+            textBoxPV.TabIndex = 83;
             // 
-            // textBox5
+            // textBoxMU
             // 
-            textBox5.Location = new Point(317, 104);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 84;
+            textBoxMU.Location = new Point(317, 104);
+            textBoxMU.Name = "textBoxMU";
+            textBoxMU.Size = new Size(100, 23);
+            textBoxMU.TabIndex = 84;
             // 
             // buttonComprobar
             // 
@@ -353,6 +358,7 @@
             buttonComprobar.TabIndex = 85;
             buttonComprobar.Text = "COMPROBAR";
             buttonComprobar.UseVisualStyleBackColor = true;
+            buttonComprobar.Click += buttonComprobar_Click;
             // 
             // label6
             // 
@@ -372,16 +378,27 @@
             label7.TabIndex = 87;
             label7.Text = "MU";
             // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(12, 9);
+            label9.Name = "label9";
+            label9.Size = new Size(73, 15);
+            label9.TabIndex = 88;
+            label9.Text = "< REGRESAR";
+            label9.Click += label9_Click;
+            // 
             // FormBase1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(719, 645);
+            ClientSize = new Size(719, 613);
+            Controls.Add(label9);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(buttonComprobar);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
+            Controls.Add(textBoxMU);
+            Controls.Add(textBoxPV);
             Controls.Add(checkBoxCalculoCV);
             Controls.Add(buttoncalcular);
             Controls.Add(label43);
@@ -406,11 +423,11 @@
             Controls.Add(labelBase1);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(textBox3);
+            Controls.Add(textBoxUtilidad);
             Controls.Add(label3);
-            Controls.Add(textBox2);
+            Controls.Add(textBoxGO);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(textBoxCV);
             Controls.Add(label1);
             Name = "FormBase1";
             Text = "Base 1";
@@ -421,11 +438,11 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
+        private TextBox textBoxCV;
         private Label label2;
-        private TextBox textBox2;
+        private TextBox textBoxGO;
         private Label label3;
-        private TextBox textBox3;
+        private TextBox textBoxUtilidad;
         private Label label4;
         private Label label5;
         private Label labelBase1;
@@ -450,10 +467,12 @@
         private Label label8;
         private Button buttoncalcular;
         private CheckBox checkBoxCalculoCV;
-        private TextBox textBox4;
-        private TextBox textBox5;
+        private TextBox textBoxPV;
+        private TextBox textBoxMU;
         private Button buttonComprobar;
         private Label label6;
         private Label label7;
+        private ToolTip toolTip1;
+        private Label label9;
     }
 }

@@ -227,14 +227,14 @@ namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
             double costovarufu = cv * ufu;
             labelVentasUFU.Text = "Q" + ventasufu.ToString();
             labelCVUFU.Text = "Q" + costovarufu.ToString();
-            
+
             double ubrutaufu = ventasufu - costovarufu;
             labelUBrutaUFU.Text = "Q " + ubrutaufu.ToString();
 
             double uaiufu = ubrutaufu - go;
             labelUAIUFU.Text = "Q " + uaiufu.ToString();
 
-            if(((0.25 * uaiufu) / ventasufu) < 0.07)
+            if (((0.25 * uaiufu) / ventasufu) < 0.07)
             {
                 double isrufu = 0.25 * uaiufu;
                 labelISRUFU.Text = "Q " + isrufu.ToString();
@@ -262,7 +262,7 @@ namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
             labelCVUFISR.Text = "Q " + costovarisr.ToString();
 
             double ubrutaisr = ventasisr - costovarisr;
-            labelUBrutaUFISR.Text= "Q " + ubrutaisr.ToString();
+            labelUBrutaUFISR.Text = "Q " + ubrutaisr.ToString();
 
             double uaiisr = ubrutaisr - go;
             labelUAIUFISR.Text = "Q " + uaiisr.ToString();
@@ -290,7 +290,7 @@ namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
             double porcentajeCV = double.Parse(textBoxPRcv.Text);
 
             double ventasmon = ufimon;
-            double costovarmon = (ufimon * (porcentajeCV/100));
+            double costovarmon = (ufimon * (porcentajeCV / 100));
             labelVentasMON.Text = "Q " + ventasmon.ToString();
             labelCVMON.Text = "Q " + costovarmon.ToString();
 
@@ -299,6 +299,13 @@ namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
 
             double uaimon = ubrutamon - go;
             labelUAIMON.Text = "Q " + uaimon.ToString();
+        }
+
+        private void labelRegresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormMenu formMenu = new FormMenu();
+            formMenu.Show();
         }
     }
 }

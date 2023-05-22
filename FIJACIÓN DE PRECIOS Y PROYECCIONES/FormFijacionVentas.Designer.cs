@@ -92,6 +92,7 @@
             label43 = new Label();
             label44 = new Label();
             label45 = new Label();
+            labelRegresar = new Label();
             SuspendLayout();
             // 
             // label1
@@ -635,11 +636,22 @@
             label45.TabIndex = 64;
             label45.Text = "UNIDADES MONETARIAS";
             // 
+            // labelRegresar
+            // 
+            labelRegresar.AutoSize = true;
+            labelRegresar.Location = new Point(12, 9);
+            labelRegresar.Name = "labelRegresar";
+            labelRegresar.Size = new Size(73, 15);
+            labelRegresar.TabIndex = 65;
+            labelRegresar.Text = "< REGRESAR";
+            labelRegresar.Click += labelRegresar_Click;
+            // 
             // FormFijacionVentas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(985, 698);
+            Controls.Add(labelRegresar);
             Controls.Add(label45);
             Controls.Add(label44);
             Controls.Add(label43);
@@ -772,5 +784,6 @@
         private Label label43;
         private Label label44;
         private Label label45;
+        private Label labelRegresar;
     }
 }
