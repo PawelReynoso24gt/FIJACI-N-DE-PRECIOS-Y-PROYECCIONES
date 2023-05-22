@@ -253,6 +253,52 @@ namespace FIJACIÓN_DE_PRECIOS_Y_PROYECCIONES
 
             //UFUISR
             labelGOUFISR.Text = "Q " + go.ToString();
+
+            int ufisr = UNIFISISR();
+
+            double ventasisr = pv * ufisr;
+            double costovarisr = cv * ufisr;
+            labelVentasUFISR.Text = "Q " + ventasisr.ToString();
+            labelCVUFISR.Text = "Q " + costovarisr.ToString();
+
+            double ubrutaisr = ventasisr - costovarisr;
+            labelUBrutaUFISR.Text= "Q " + ubrutaisr.ToString();
+
+            double uaiisr = ubrutaisr - go;
+            labelUAIUFISR.Text = "Q " + uaiisr.ToString();
+
+            if (((0.25 * uaiisr) / ventasisr) < 0.07)
+            {
+                double isrisr = 0.25 * uaiisr;
+                labelISRUFISR.Text = "Q " + isrisr.ToString();
+
+                double utinetaisr = uaiisr - isrisr;
+                labelNETAUFISR.Text = "Q " + utinetaisr.ToString();
+            }
+            else
+            {
+                double isrisr = 0.07 * ventasisr;
+                labelISRUFU.Text = "Q " + isrisr.ToString();
+
+                double utinetaisr = uaiisr - isrisr;
+                labelNETAUFISR.Text = "Q " + utinetaisr.ToString();
+            }
+
+            //MONETARIOS
+            double ufimon = UNIMON();
+            labelGOMON.Text = "Q " + go.ToString();
+            double porcentajeCV = double.Parse(textBoxPRcv.Text);
+
+            double ventasmon = ufimon;
+            double costovarmon = (ufimon * (porcentajeCV/100));
+            labelVentasMON.Text = "Q " + ventasmon.ToString();
+            labelCVMON.Text = "Q " + costovarmon.ToString();
+
+            double ubrutamon = ventasmon - costovarmon;
+            labelUBrutaMON.Text = "Q " + ubrutamon.ToString();
+
+            double uaimon = ubrutamon - go;
+            labelUAIMON.Text = "Q " + uaimon.ToString();
         }
     }
 }
